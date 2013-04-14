@@ -1,0 +1,49 @@
+"行番号を表示する
+set number
+
+"新しい行を開始したときに、新しい行のインデントを現在行と同じ量にする
+set autoindent
+
+"新しい行を作ったときに高度な自動インデントを行う
+set smartindent
+
+"タブの代わりに空白文字を挿入する
+set expandtab
+
+"ファイル内の <Tab> が対応する空白の数
+set tabstop=4
+
+"tabstopを変えずに空白を含めることにより、見た目のtabstopを変える
+set softtabstop=4
+
+"自動インデントの各段階に使われる空白の数
+set shiftwidth=4
+
+"シンタックス設定
+syntax on
+
+"補完候補を表示する
+set wildmenu
+
+"検索語を強調表示（<C-L>を押すと現在の強調表示を解除する）
+set hlsearch
+
+"検索で、大文字小文字を区別しない
+set ignorecase
+"検索で小文字なら大文字を無視、大文字なら無視しない設定
+set smartcase
+
+"インクリメンタルサーチを行う
+set incsearch
+
+"オートインデント、改行、インサートモード開始直後にバックスペースキーで削除できるようにする
+set backspace=indent,eol,start
+
+"insertモードを抜けるとIMEオフ
+set noimdisable
+set iminsert=0 imsearch=0
+set noimcmdline
+inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
+
+"保存時に行末の空白を除去する
+autocmd BufWritePre * :%s/\s\+$//e
