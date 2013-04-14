@@ -19,8 +19,9 @@ do
       else
         ln -s $ENTRY_PATH
         echo "linked $ENTRY_PATH"
-        . $ENTRY
+        # TODO bash系だけ読み込む
+        #. $ENTRY
       fi
     fi
   fi
-done 
+done
