@@ -1,6 +1,9 @@
 "Vi互換をオフ
 set nocompatible
 
+"カーソルを行頭，行末で止まらないようにする
+set whichwrap=b,s,h,l,<,>,[,]
+
 "ファイルを上書きする前にバックアップファイルを作る
 "set backup
 "バックアップのディレクトリ
@@ -18,7 +21,8 @@ set noswapfile
 set showmode
 
 "開いているファイルのタイプ
-filetype indent plugin on
+"filetype indent plugin on
+filetype off
 
 "変更中のファイルでも、保存しないで他のファイルを表示することが出来るようにする
 set hidden
@@ -59,3 +63,4 @@ set cmdheight=2
 
 "インクリメンタルサーチを行う
 set incsearch
+
