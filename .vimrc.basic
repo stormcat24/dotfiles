@@ -56,7 +56,7 @@ set visualbell
 set mouse=a
 
 "クリップボードの動作設定
-set clipboard=unnamed
+set clipboard=unnamed,autoselect
 
 "コマンドラインに使われるスクリーン上の行数。
 set cmdheight=2
