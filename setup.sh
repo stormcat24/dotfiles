@@ -20,7 +20,9 @@ do
         ln -s $ENTRY_PATH
         echo "linked $ENTRY_PATH"
         # TODO bash系だけ読み込む
-        #. $ENTRY
+        if [[ "$ENTRY" =~ ^\.bash_.*$ ]]; then
+          source $ENTRY_PATH
+        fi
       fi
     fi
   fi
