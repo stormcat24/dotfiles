@@ -1,0 +1,10 @@
+"デフォルトエンコード
+set encoding=utf-8
+
+"改行文字
+set ffs=unix,dos,mac
+
+"ファイルタイプ別のエンコーディング
+autocmd FileType sql :set fileencoding=utf-8
+autocmd FileType java :set fileencoding=utf-8
+autocmd FileType scala :set fileencoding=utf-8
