@@ -1,3 +1,4 @@
+set nocompatible
 
 filetype off
 
@@ -32,15 +33,45 @@ NeoBundle 'git://git.wincent.com/command-t.git'
 NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
 NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 
-"NeoBundle 'Shougo/neocomplcache'
-"NeoBundle 'Shougo/neocomplcache-snippets-complete'
-
 " ***** Original Setting Start *****
-  " 編集系
-    " YankRing.vim : ヤンクの履歴を管理し、順々に参照、出力できるようにする
-    " NeoBundle 'YankRing.vim'
-    " NeoBundle 'Shougo/unite.vim'
-    " NeoBundle 'Gundo'
+"" 編集系
+  NeoBundle 'YankRing.vim'
+  NeoBundle 'Shougo/unite.vim'
+  NeoBundle 'Gundo'
+  NeoBundle 'Align'
+  NeoBundle 'xmledit'
+
+"" 補完系
+  "NeoBundle 'Shougo/neocomplcache'
+  "NeoBundle 'Shougo/neosnippet.git'
+
+"" シンタックス
+""" 言語
+"""" Java
+    NeoBundle 'vim-scripts/javacomplete'
+    "NeoBundle 'vim-scripts/java_getset.vim'
+    "NeoBundle 'vim-scripts/jcommenter.vim'
+"""" Javascript
+    NeoBundle 'JavaScript-syntax'
+    NeoBundle 'jQuery'
+"""" Scala
+    NeoBundle 'yuroyoro/vim-scala'
+"""" Clojure
+    NeoBundle 'jondistad/vimclojure'
+"""" Python
+    NeoBundle 'yuroyoro/vim-python'
+"""" CoffeeScript
+    NeoBundle 'kchmck/vim-coffee-script'
+
+""" 設定ファイル
+    NeoBundle 'nginx.vim'
+
+""" その他
+    NeoBundle 'tpope/vim-markdown'
+
+"" ツール
+    NeoBundle 'vtreeexplorer'
+
 " ***** Original Settings End *****
 
 filetype plugin indent on     " Required!

@@ -1,6 +1,3 @@
-"Vi互換をオフ
-set nocompatible
-
 "カーソルを行頭，行末で止まらないようにする
 set whichwrap=b,s,h,l,<,>,[,]
 
