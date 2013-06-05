@@ -14,7 +14,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f
 " your_machines_makefile
-NeoBundle 'Shougo/vimproc'
+" NeoBundle 'Shougo/vimproc'
 
 " My Bundles here:
 "
@@ -36,14 +36,24 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 " ***** Original Setting Start *****
 "" 編集系
   NeoBundle 'YankRing.vim'
-  NeoBundle 'Shougo/unite.vim'
   NeoBundle 'Gundo'
   NeoBundle 'Align'
   NeoBundle 'xmledit'
 
 "" 補完系
-  "NeoBundle 'Shougo/neocomplcache'
-  "NeoBundle 'Shougo/neosnippet.git'
+  NeoBundle 'Shougo/neocomplcache'
+  NeoBundle 'Shougo/neosnippet.git'
+
+"" 検索系
+  NeoBundle 'grep.vim'
+  NeoBundle 'eregex.vim'
+  NeoBundle 'tyru/open-browser.vim'
+
+"" カラースキーマ
+  NeoBundle 'desert256.vim'
+  NeoBundle 'mrkn256.vim'
+  NeoBundle 'tomasr/molokai'
+  NeoBundle 'yuroyoro/yuroyoro256.vim'
 
 "" シンタックス
 """ 言語
@@ -69,8 +79,34 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 """ その他
     NeoBundle 'tpope/vim-markdown'
 
-"" ツール
+"" Unite
+    NeoBundle 'Shougo/unite.vim'
+    NeoBundle 'tsukkee/unite-help'
+    NeoBundle 'h1mesuke/unite-outline'
+    NeoBundle 'basyura/unite-rails'
+    NeoBundle 'thinca/vim-unite-history'
+    NeoBundle 'tsukkee/unite-tag'
+    NeoBundle 'choplin/unite-vim_hacks'
+
+"" ツール、ユーティリティ
+    NeoBundle 'cecutil'
+    NeoBundle 'Shougo/vimshell.git'
+    NeoBundle 'Shougo/vimproc', {
+          \ 'build' : {
+          \     'windows' : 'make -f make_mingw32.mak',
+          \     'cygwin' : 'make -f make_cygwin.mak',
+          \     'mac' : 'make -f make_mac.mak',
+          \     'unix' : 'make -f make_unix.mak',
+          \    },
+          \ }
     NeoBundle 'vtreeexplorer'
+    NeoBundle 'The-NERD-tree'
+    NeoBundle 'thinca/vim-openbuf'
+    NeoBundle 'Lokaltog/vim-powerline'
+    NeoBundle 'yuroyoro/vimdoc_ja'
+    NeoBundle 'tpope/vim-fugitive'
+    NeoBundle 'airblade/vim-gitgutter'
+    NeoBundle 'Kocha/vim-unite-tig'
 
 " ***** Original Settings End *****
 

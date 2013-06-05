@@ -16,3 +16,6 @@ source ~/dotfiles/.vimrc.key
 "プラグイン設定
 source ~/dotfiles/.vimrc.plugins
 
+"補完設定
+source ~/dotfiles/.vimrc.neocomplcache
+

@@ -25,6 +25,9 @@ syntax on
 "補完候補を表示する
 set wildmenu
 
+"カーソル行をハイライト
+set cursorline
+
 "検索語を強調表示（<C-L>を押すと現在の強調表示を解除する）
 set hlsearch
 
@@ -47,3 +50,6 @@ set noimcmdline
 
 "保存時に行末の空白を除去する
 autocmd BufWritePre * :%s/\s\+$//e
+
+"NERDTreeでdotfilesを表示する
+let NERDTreeShowHidden=0
