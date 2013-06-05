@@ -61,3 +61,5 @@ set cmdheight=2
 "インクリメンタルサーチを行う
 set incsearch
 
+"カーソル行をハイライト
+set cursorline
