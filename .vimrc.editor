@@ -52,4 +52,4 @@ set noimcmdline
 autocmd BufWritePre * :%s/\s\+$//e
 
 "NERDTreeでdotfilesを表示する
-let NERDTreeShowHidden=0
+let NERDTreeShowHidden=1

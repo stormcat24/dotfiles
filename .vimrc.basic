@@ -63,3 +63,5 @@ set incsearch
 
 "カーソル行をハイライト
 set cursorline
+
+let g:Powerline_symbols = 'fancy'

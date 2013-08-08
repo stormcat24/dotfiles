@@ -35,6 +35,8 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 
 " ***** Original Setting Start *****
 "" 編集系
+"""" コメントアウト
+  NeoBundle 'scrooloose/nerdcommenter.git'
   NeoBundle 'YankRing.vim'
   NeoBundle 'Gundo'
   NeoBundle 'Align'
@@ -54,6 +56,10 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle 'mrkn256.vim'
   NeoBundle 'tomasr/molokai'
   NeoBundle 'yuroyoro/yuroyoro256.vim'
+
+"" プログラミング
+"""" メソッド宣言、変数一覧を表示
+    NeoBundle 'taglist.vim'
 
 "" シンタックス
 """ 言語
@@ -102,7 +108,9 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'vtreeexplorer'
     NeoBundle 'The-NERD-tree'
     NeoBundle 'thinca/vim-openbuf'
+    "NeoBundle 'Lokaltog/vim-powerline'
     NeoBundle 'Lokaltog/vim-powerline'
+    NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
     NeoBundle 'yuroyoro/vimdoc_ja'
     NeoBundle 'tpope/vim-fugitive'
     NeoBundle 'airblade/vim-gitgutter'
