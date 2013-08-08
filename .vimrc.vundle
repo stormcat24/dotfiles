@@ -58,6 +58,8 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle 'yuroyoro/yuroyoro256.vim'
 
 "" プログラミング
+"""" quickrun
+    NeoBundle 'thinca/vim-quickrun'
 """" メソッド宣言、変数一覧を表示
     NeoBundle 'taglist.vim'
 
@@ -114,6 +116,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'yuroyoro/vimdoc_ja'
     NeoBundle 'tpope/vim-fugitive'
     NeoBundle 'airblade/vim-gitgutter'
+    NeoBundle 'gregsexton/gitv'
     NeoBundle 'Kocha/vim-unite-tig'
 
 " ***** Original Settings End *****

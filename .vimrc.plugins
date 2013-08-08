@@ -6,3 +6,23 @@ let file_name = expand("%")
 if has('vim_starting') &&  file_name == ""
   autocmd VimEnter * NERDTree ./
 endif
+
+
+" JavaScript Lint
+if !exists('b:current_compiler')
+  compiler jsl
+endif
+autocmd QuickFixCmdPost make copen
+
+" quickrun for Node
+let g:quickrun_config = {
+    \ "javascript": {
+    \   "command": "node",
+    \   "tempfile": "{tempname()}.js"
+    \   }
+    \ }
+
+autocmd FileType gitv call s:my_gitv_settings()
+function! s:my_gitv_settings()
+  "TODO
+endfunction
