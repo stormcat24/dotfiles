@@ -26,3 +26,6 @@ autocmd FileType gitv call s:my_gitv_settings()
 function! s:my_gitv_settings()
   "TODO
 endfunction
+
+" vimshell
+let g:vimshell_interactive_update_time = 10
