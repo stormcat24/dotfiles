@@ -62,3 +62,5 @@ PROMPT="[$P_INFO$P_CDIR]$P_VCS$ "
 
 # tmuxのプロンプト設定で上書き
 #PROMPT="$PROMPT"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+#
+export TERM='xterm-256color'
