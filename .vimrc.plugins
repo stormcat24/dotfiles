@@ -1,6 +1,3 @@
-"VSTreeExplorer
-let g:treeExplVertical=1
-
 "NERDTree
 let file_name = expand("%")
 if has('vim_starting') &&  file_name == ""
@@ -28,4 +25,4 @@ function! s:my_gitv_settings()
 endfunction
 
 " vimshell
-let g:vimshell_interactive_update_time = 10
+"let g:vimshell_interactive_update_time = 10
