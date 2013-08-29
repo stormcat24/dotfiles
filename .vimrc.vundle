@@ -109,18 +109,12 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
           \     'unix' : 'make -f make_unix.mak',
           \    },
           \ }
-    NeoBundle 'vtreeexplorer'
     NeoBundle 'The-NERD-tree'
     NeoBundle 'thinca/vim-openbuf'
-    "NeoBundle 'Lokaltog/vim-powerline'
-    "NeoBundle 'Lokaltog/vim-powerline'
-    "NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
     NeoBundle 'bling/vim-airline'
     NeoBundle 'yuroyoro/vimdoc_ja'
-    NeoBundle 'tpope/vim-fugitive'
     NeoBundle 'airblade/vim-gitgutter'
     NeoBundle 'gregsexton/gitv'
-    NeoBundle 'Kocha/vim-unite-tig'
 
 " ***** Original Settings End *****
 
