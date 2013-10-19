@@ -53,3 +53,13 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 "NERDTreeでdotfilesを表示する
 let NERDTreeShowHidden=1
+
+
+" 更新時に自動でリロード
+set autoread
+
+" autoreadのチェック
+augroup vimrc-checktime
+  autocmd!
+  autocmd WinEnter * checktime
+augroup END
