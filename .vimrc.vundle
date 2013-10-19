@@ -82,6 +82,8 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'yuroyoro/vim-python'
 """" CoffeeScript
     NeoBundle 'kchmck/vim-coffee-script'
+"""" TypeScript
+    NeoBundle 'leafgarland/typescript-vim'
 
 """ 設定ファイル
     NeoBundle 'nginx.vim'
