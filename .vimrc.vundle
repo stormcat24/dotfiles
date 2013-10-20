@@ -41,6 +41,8 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle 'Gundo'
   NeoBundle 'Align'
   NeoBundle 'xmledit'
+"""" スペルチェック
+  NeoBundle 'mattn/excitetranslate-vim'
 
 "" 補完系
   NeoBundle 'Shougo/neocomplcache'
