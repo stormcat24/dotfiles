@@ -43,10 +43,10 @@ set incsearch
 set backspace=indent,eol,start
 
 "insertモードを抜けるとIMEオフ
-set noimdisable
-set iminsert=0 imsearch=0
-set noimcmdline
-"inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
+"set noimdisable
+"set iminsert=0 imsearch=0
+"set noimcmdline
+inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
 
 "保存時に行末の空白を除去する
 autocmd BufWritePre * :%s/\s\+$//e
@@ -54,11 +54,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 "NERDTreeでdotfilesを表示する
 let NERDTreeShowHidden=1
 
-
-" 更新時に自動でリロード
-set autoread
-
-" autoreadのチェック
+"autoreadのチェック
 augroup vimrc-checktime
   autocmd!
   autocmd WinEnter * checktime
