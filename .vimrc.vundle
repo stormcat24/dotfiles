@@ -54,6 +54,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle 'tyru/open-browser.vim'
   NeoBundle "kien/ctrlp.vim"
   NeoBundle 'majutsushi/tagbar'
+  NeoBundle 'osyo-manga/vim-anzu'
 
 "" カラースキーマ
   NeoBundle 'desert256.vim'
