@@ -77,7 +77,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 """" Javascript
     NeoBundle 'JavaScript-syntax'
     NeoBundle 'jQuery'
-    NeoBundle 'teramako/jscomplete-vim'
+    NeoBundle 'mattn/jscomplete-vim'
 """" Scala
     NeoBundle 'yuroyoro/vim-scala'
 """" Clojure
