@@ -62,6 +62,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle 'tomasr/molokai'
   NeoBundle 'yuroyoro/yuroyoro256.vim'
 
+
 "" プログラミング
 """" quickrun
     NeoBundle 'thinca/vim-quickrun'
@@ -72,12 +73,11 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 """ 言語
 """" Java
     NeoBundle 'vim-scripts/javacomplete'
-    "NeoBundle 'vim-scripts/java_getset.vim'
-    "NeoBundle 'vim-scripts/jcommenter.vim'
 """" Javascript
     NeoBundle 'JavaScript-syntax'
     NeoBundle 'jQuery'
     NeoBundle 'mattn/jscomplete-vim'
+    NeoBundle 'nono/vim-handlebars'
 """" Scala
     NeoBundle 'yuroyoro/vim-scala'
 """" Clojure

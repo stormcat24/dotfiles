@@ -13,3 +13,4 @@ autocmd FileType rb :set fileencoding=utf-8
 autocmd FileType coffee :set fileencoding=utf-8
 autocmd FileType ts :set fileencoding=utf-8
 autocmd FileType groovy :set fileencoding=utf-8
+autocmd FileType handlebars :set fileencoding=utf-8
