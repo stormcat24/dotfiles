@@ -37,7 +37,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 "" 編集系
 """" コメントアウト
   NeoBundle 'scrooloose/nerdcommenter.git'
-  NeoBundle 'YankRing.vim'
+  "NeoBundle 'YankRing.vim'
   NeoBundle 'Gundo'
   NeoBundle 'Align'
   NeoBundle 'xmledit'
@@ -45,6 +45,12 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle 'mattn/excitetranslate-vim'
 """" javaのプロパティファイルをnative2asciiで開くやつ
   NeoBundle 'KamunagiChiduru/vim-edit-properties'
+"""" 一括置換
+  NeoBundle 'osyo-manga/vim-over'
+"""" yankround.vim
+  NeoBundle 'LeafCage/yankround.vim'
+"""" オートセーブ
+  NeoBundle 'syui/wauto.vim'
 
 "" 補完系
   NeoBundle 'Shougo/neocomplcache'
