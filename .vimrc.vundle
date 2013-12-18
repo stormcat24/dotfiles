@@ -69,6 +69,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle 'mrkn256.vim'
   NeoBundle 'tomasr/molokai'
   NeoBundle 'yuroyoro/yuroyoro256.vim'
+  NeoBundle 'w0ng/vim-hybrid'
 
 
 "" プログラミング

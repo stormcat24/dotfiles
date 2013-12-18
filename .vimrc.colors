@@ -3,7 +3,9 @@
 "-------------------------------------------------------------------------------
 
 " colorscheme mrkn256
-colorscheme yuroyoro256
+"colorscheme yuroyoro256
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid
 
 " ターミナルタイプによるカラー設定
 if &term =~ "xterm-256color" || "screen-256color"
