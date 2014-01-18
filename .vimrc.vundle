@@ -130,6 +130,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'yuroyoro/vimdoc_ja'
     NeoBundle 'airblade/vim-gitgutter'
     NeoBundle 'gregsexton/gitv'
+    NeoBundle 'itchyny/calendar.vim'
 
 " ***** Original Settings End *****
 
