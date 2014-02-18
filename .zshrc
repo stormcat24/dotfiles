@@ -1,3 +1,6 @@
+# vim like
+bindkey -v
+
 # aliases
 alias ll='ls -lh'
 alias la='ls -lha'
@@ -116,5 +119,3 @@ zaw-register-src -n gitdir zaw-src-gitdir
 #PROMPT="$PROMPT"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 #
 export TERM='xterm-256color'
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
