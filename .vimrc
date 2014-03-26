@@ -4,6 +4,9 @@ source ~/dotfiles/.vimrc.vundle
 "基本設定
 source ~/dotfiles/.vimrc.basic
 
+"関数定義
+source ~/dotfiles/.vimrc.function
+
 "エディタ設定
 source ~/dotfiles/.vimrc.editor
 
