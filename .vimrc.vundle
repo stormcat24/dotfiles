@@ -51,6 +51,8 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle 'LeafCage/yankround.vim'
 """" オートセーブ
   NeoBundle 'syui/wauto.vim'
+"""" vim-repeat
+  NeoBundle 'tpope/vim-repeat'
 
 "" 補完系
   NeoBundle 'Shougo/neocomplcache'
@@ -134,6 +136,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'itchyny/calendar.vim'
     NeoBundle 't9md/vim-choosewin'
     NeoBundle 'supermomonga/projectlocal.vim'
+    NeoBundle 'mattn/excelview-vim'
 
 "" TweetVim関連
     NeoBundle 'basyura/TweetVim'
