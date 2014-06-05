@@ -6,6 +6,11 @@ if has('vim_starting')
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
+" gocode
+set rtp+=$GOROOT/misc/vim
+"golint
+exe "set rtp+=" . globpath($GOPATH, "src/github.com/golang/lint/misc/vim")
+
 call neobundle#rc(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
@@ -53,6 +58,10 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle 'syui/wauto.vim'
 """" vim-repeat
   NeoBundle 'tpope/vim-repeat'
+"""" editorconfig
+  NeoBundle 'editorconfig/editorconfig-vim'
+"""" markdown
+  NeoBundle 'kannokanno/previm'
 
 "" 補完系
   NeoBundle 'Shougo/neocomplcache'
@@ -100,6 +109,8 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 """" TypeScript
     NeoBundle 'leafgarland/typescript-vim'
     NeoBundle 'clausreinke/typescript-tools'
+"""" Go
+    NeoBundle 'Blackrush/vim-gocode'
 
 """ 設定ファイル
     NeoBundle 'nginx.vim'
