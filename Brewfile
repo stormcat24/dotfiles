@@ -56,6 +56,7 @@ install brew-cask
 
 # cask packages
 cask install airdisplay
+cask install atom
 cask install charles
 cask install cyberduck
 cask install diskwave
@@ -70,11 +71,14 @@ cask install keyremap4macbook
 cask install kobito
 cask install intellij-idea-ce
 cask install iterm2
+cask install lighttable
 cask install mysqlworkbench
 cask install node-webkit
 cask install nosleep
 cask install hipchat
+cask install silverlight
 cask install skype
+cask install stay
 cask install thunderbird
 cask install tunnelblick
 cask install remote-desktop-connection
