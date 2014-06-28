@@ -2,6 +2,7 @@ update
 upgrade
 
 # brew packages
+install ansible
 install autoconf
 install automake
 install bash
@@ -10,6 +11,7 @@ install cloog-ppl015
 install cmake
 install ctags
 install curl
+install docker
 #install fontconfig
 install fontforge
 install freetype
@@ -23,8 +25,11 @@ install giter8
 install gmp4
 install gradle
 install hub
+install icu4c
 install jpeg
 #install jsl
+install libiconv
+install libxml2
 install libevent
 install libgpg-error
 install libksba
@@ -32,6 +37,7 @@ install libmpc08
 install libtiff
 install libtool
 install libyaml
+install libxslt
 install mercurial
 install mpfr2
 install openssl
@@ -41,6 +47,10 @@ install ppl011
 install rbenv
 install readline
 install reattach-to-user-namespace
+install rbenv
+install ruby-build
+install rbenv-gemset
+install rbenv-gem-rehash
 install sbt
 install scala
 install tig
@@ -50,6 +60,11 @@ install vim
 install wget
 install zsh
 
+# link
+link libxml2 --force
+link libiconv --force
+link libxslt --force
+
 # brew-cask
 tap phinze/homebrew-cask
 install brew-cask
@@ -57,7 +72,6 @@ install brew-cask
 # cask packages
 cask install airdisplay
 cask install atom
-cask install charles
 cask install cyberduck
 cask install diskwave
 cask install dropbox
@@ -66,10 +80,10 @@ cask install firefox
 cask install github
 cask install google-chrome
 cask install google-drive
-cask install gpgtools
+#cask install gpgtools
 cask install keyremap4macbook
 cask install kobito
-cask install intellij-idea-ce
+#cask install intellij-idea-ce
 cask install iterm2
 cask install lighttable
 cask install mysqlworkbench
@@ -79,14 +93,13 @@ cask install hipchat
 cask install silverlight
 cask install skype
 cask install stay
-cask install thunderbird
 cask install tunnelblick
 cask install remote-desktop-connection
 cask install vagrant
 cask install vagrant-manager
 cask install virtualbox
 cask install visualvm
-cask install xmind
+cask install xquartz
 
 # finalize
-cleanup
+#cleanup
