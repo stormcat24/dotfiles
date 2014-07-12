@@ -56,7 +56,7 @@ install scala
 install tig
 install tmux
 install v8
-install vim
+install vim --override-system-vi --with-lua --with-ruby --with-python --with-python3
 install wget
 install zsh
 
@@ -82,7 +82,7 @@ cask install google-chrome
 cask install google-drive
 #cask install gpgtools
 cask install keyremap4macbook
-cask install kobito
+#cask install kobito
 #cask install intellij-idea-ce
 cask install iterm2
 cask install lighttable

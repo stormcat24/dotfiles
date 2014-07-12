@@ -121,9 +121,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>489 223 445 270 0 0 1280 778 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>1766 180 924 485 1280 -640 2560 1440 </string>
+	<string>356 124 924 485 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1280 -636 2558 1436 1280 -640 2560 1440 </string>
+	<string>-1920 -268 1914 1046 -1920 -280 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>132 181 1130 551 0 0 1280 778 </string>
 	<key>NeverWarnAboutShortLivedSessions_FAA30CEA-ED16-4185-B258-3B3E5D656F4F</key>
@@ -677,7 +677,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 12</string>
+			<string>mplus-1m-medium 16</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1086,7 +1086,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>0.80000001192092896</real>
+			<real>0.89999997615814209</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -1390,11 +1390,11 @@
 			<key>Name</key>
 			<string>tehepero</string>
 			<key>Non Ascii Font</key>
-			<string>uzura_font 14</string>
+			<string>mplus-1c-light 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>uzura_font 16</string>
+			<string>mplus-1m-light 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1556,7 +1556,7 @@
 			<key>Use Bright Bold</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>0.88006758689880371</real>
+			<real>0.72760504484176636</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -1565,6 +1565,8 @@
 			<string>/Users/a13062</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesLost</key>
+	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1629,7 +1631,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-01-06T01:09:13Z</date>
+	<date>2014-07-12T05:13:05Z</date>
 	<key>SUSkippedVersion</key>
 	<string>1.0.0.20130622</string>
 	<key>SavePasteHistory</key>
