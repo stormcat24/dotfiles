@@ -25,6 +25,8 @@ function! s:my_gitv_settings()
 endfunction
 
 " vimshell
+let g:vimshell_prompt_expr = 'getcwd()." > "'
+let g:vimshell_prompt_pattern = '^\f\+ > '
 "let g:vimshell_interactive_update_time = 10
 
 " jscomplete-vim
@@ -33,3 +35,8 @@ let g:jscomplete_use = ['dom', 'moz', 'es6th']
 " easy-motion
 let g:EasyMotion_do_mapping = 0
 nmap s <Plug>(easymotion-s2)
+
+" go
+if $GOROOT != ''
+  set rtp+=$GOROOT/misc/vim
+endif

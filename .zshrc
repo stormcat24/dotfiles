@@ -119,3 +119,4 @@ zaw-register-src -n gitdir zaw-src-gitdir
 #PROMPT="$PROMPT"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 #
 export TERM='xterm-256color'
+
