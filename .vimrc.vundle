@@ -104,9 +104,8 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 """" TypeScript
     NeoBundle 'leafgarland/typescript-vim'
     NeoBundle 'clausreinke/typescript-tools'
-
-""" 設定ファイル
-    NeoBundle 'nginx.vim'
+"""" Go
+    NeoBundle 'Blackrush/vim-gocode'
 
 """ その他
     NeoBundle 'tpope/vim-markdown'

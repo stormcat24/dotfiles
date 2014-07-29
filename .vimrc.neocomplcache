@@ -96,6 +96,7 @@ autocmd FileType xml        setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php        setlocal omnifunc=phpcomplete#CompletePHP
 autocmd FileType c          setlocal omnifunc=ccomplete#Complete
 autocmd FileType ruby       setlocal omnifunc=rubycomplete#Complete
+autocmd FileType java       setlocal omnifunc=javacomplete#Complete
 
 " Enable heavy omni completion.
 if !exists('g:neocomplcache_omni_patterns')
@@ -143,4 +144,7 @@ endif
 let g:rsenseUseOmniFunc = 1
 let g:rsenseHome = expand('~/src/rsense-0.3')
 
+"" Ruby
 let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
+"" Go
+let g:neocomplcache_omni_patterns.go = '\h\w*\.\?'
