@@ -45,6 +45,7 @@ install openssl
 install pcre
 install pkg-config
 install ppl011
+install python
 install rbenv
 install readline
 install reattach-to-user-namespace
@@ -60,6 +61,8 @@ install v8
 install vim --override-system-vi --with-lua --with-ruby --with-python --with-python3
 install wget
 install zsh
+tap peco/peco
+install peco
 
 # link
 link libxml2 --force
@@ -83,17 +86,13 @@ cask install google-chrome
 cask install google-drive
 #cask install gpgtools
 cask install keyremap4macbook
-#cask install kobito
-#cask install intellij-idea-ce
 cask install iterm2
 cask install lighttable
 cask install mysqlworkbench
 cask install node-webkit
 cask install nosleep
 cask install hipchat
-cask install silverlight
 cask install skype
-cask install stay
 cask install tunnelblick
 cask install remote-desktop-connection
 cask install vagrant
@@ -103,4 +102,4 @@ cask install visualvm
 cask install xquartz
 
 # finalize
-#cleanup
+cleanup

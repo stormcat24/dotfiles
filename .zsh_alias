@@ -1,0 +1,11 @@
+# define aliases
+
+#Unix
+## ls
+alias ll='ls -lh'
+alias la='ls -lha'
+alias ls='ls -Gh'
+
+# git
+## WIP commit
+alias gip='git commit -m "[WIP]"'
