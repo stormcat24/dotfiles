@@ -109,6 +109,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 
 """ その他
     NeoBundle 'tpope/vim-markdown'
+    NeoBundle 'wellle/tmux-complete.vim'
 
 "" Unite
     NeoBundle 'Shougo/unite.vim'
