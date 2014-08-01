@@ -1,31 +1,32 @@
 "------------------------------------
-" neocomplecache.vim
+" neocomplete.vim
 "------------------------------------
+let g:neocomplete#force_overwrite_completefunc = 1
 " AutoComplPopを無効にする
 let g:acp_enableAtStartup = 0
-" NeoComplCacheを有効にする
-let g:neocomplcache_enable_at_startup = 1
+" neocompleteを有効にする
+let g:neocomplete#enable_at_startup = 1
 " 補完が自動で開始される文字数
-let g:neocomplcache_auto_completion_start_length = 3
+let g:neocomplete#auto_completion_start_length = 3
 " smarrt case有効化。 大文字が入力されるまで大文字小文字の区別を無視する
-let g:neocomplcache_enable_smart_case = 1
+let g:neocomplete#enable_smart_case = 1
 " camle caseを有効化。大文字を区切りとしたワイルドカードのように振る舞う
-let g:neocomplcache_enable_camel_case_completion = 1
+let g:neocomplete#enable_camel_case_completion = 1
 " _(アンダーバー)区切りの補完を有効化
-let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplete#enable_underbar_completion = 1
 " シンタックスをキャッシュするときの最小文字長を3に
-let g:neocomplcache_min_syntax_length = 3
-" neocomplcacheを自動的にロックするバッファ名のパターン
-let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+let g:neocomplete#min_syntax_length = 3
+" neocompleteを自動的にロックするバッファ名のパターン
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 " -入力による候補番号の表示
-let g:neocomplcache_enable_quick_match = 1
+let g:neocomplete#enable_quick_match = 1
 " 補完候補の一番先頭を選択状態にする(AutoComplPopと似た動作)
-let g:neocomplcache_enable_auto_select = 1
+let g:neocomplete#enable_auto_select = 1
 "ポップアップメニューで表示される候補の数。初期値は100
-let g:neocomplcache_max_list = 20
+let g:neocomplete#max_list = 20
 
 " Define dictionary.
-let g:neocomplcache_dictionary_filetype_lists = {
+let g:neocomplete#dictionary_filetype_lists = {
     \ 'default' : '',
     \ 'vimshell' : $HOME.'/.vimshell_hist',
     \ 'scala' : $HOME.'/.vim/bundle/vim-scala/dict/scala.dict',
@@ -34,13 +35,13 @@ let g:neocomplcache_dictionary_filetype_lists = {
     \ }
 
 " Define keyword.
-if !exists('g:neocomplcache_keyword_patterns')
-    let g:neocomplcache_keyword_patterns = {}
+if !exists('g:neocomplete#keyword_patterns')
+    let g:neocomplete#keyword_patterns = {}
 endif
-let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
+let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
 " ユーザー定義スニペット保存ディレクトリ
-let g:neocomplcache_snippets_dir = $HOME.'/.vim/snippets'
+let g:neocomplete#snippets_dir = $HOME.'/.vim/snippets'
 
 " スニペット
 imap <C-y> <Plug>(neosnippet_expand_or_jump)
@@ -59,36 +60,36 @@ endif
 let g:neosnippet#snippets_directory = '~/.vim/snipmate-snippets/snippets  ~/dotfiles/.vim/snippets'
 
 " 補完を選択しpopupを閉じる
-" inoremap <expr><C-y> neocomplcache#close_popup()
+" inoremap <expr><C-y> neocomplete#close_popup()
 " 補完をキャンセルしpopupを閉じる
-" inoremap <expr><C-e> neocomplcache#cancel_popup()
+" inoremap <expr><C-e> neocomplete#cancel_popup()
 " TABで補完できるようにする
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 " undo
-inoremap <expr><C-g>     neocomplcache#undo_completion()
+inoremap <expr><C-g>     neocomplete#undo_completion()
 " 補完候補の共通部分までを補完する
-inoremap <expr><C-s> neocomplcache#complete_common_string()
+inoremap <expr><C-s> neocomplete#complete_common_string()
 " C-kを押すと行末まで削除
 " inoremap <C-k> <C-o>D
-" C-nでneocomplcache補完
+" C-nでneocomplete補完
 inoremap <expr><C-n>  pumvisible() ? "\<C-n>" : "\<C-x>\<C-u>\<C-p>"
 " C-pでkeyword補完
 inoremap <expr><C-p> pumvisible() ? "\<C-p>" : "\<C-p>\<C-n>"
 " 補完候補が出ていたら確定、なければ改行
-inoremap <expr><CR>  pumvisible() ? neocomplcache#close_popup() : "<CR>"
+inoremap <expr><CR>  pumvisible() ? neocomplete#close_popup() : "<CR>"
 
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-x><C-o> &filetype == 'vim' ? "\<C-x><C-v><C-p>" : neocomplcache#manual_omni_complete()
+inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+inoremap <expr><C-x><C-o> &filetype == 'vim' ? "\<C-x><C-v><C-p>" : neocomplete#manual_omni_complete()
 
 " buffer開いたらneoconでcache
-autocmd BufReadPost,BufEnter,BufWritePost :NeoComplCacheCachingBuffer <buffer>
+autocmd BufReadPost,BufEnter,BufWritePost :neocompleteCachingBuffer <buffer>
 
 " FileType毎のOmni補完を設定
-autocmd FileType python     setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType python     setlocal omnifunc=jedi#completions
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html       setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css        setlocal omnifunc=csscomplete#CompleteCSS
@@ -99,52 +100,50 @@ autocmd FileType ruby       setlocal omnifunc=rubycomplete#Complete
 autocmd FileType java       setlocal omnifunc=javacomplete#Complete
 
 " Enable heavy omni completion.
-if !exists('g:neocomplcache_omni_patterns')
-  let g:neocomplcache_omni_patterns = {}
-endif
-let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\h\w*\|\h\w*::'
-let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
-let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
+"if !exists('g:neocomplete#omni_patterns')
+  "let g:neocomplete#omni_patterns = {}
+"endif
+"let g:neocomplete#omni_patterns.ruby = '[^. *\t]\.\h\w*\|\h\w*::'
+"let g:neocomplete#omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+"let g:neocomplete#omni_patterns.c = '\%(\.\|->\)\h\w*'
+"let g:neocomplete#omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
-" autocmd FileType ruby let g:neocomplcache_source_disable = {
+" autocmd FileType ruby let g:neocomplete#source_disable = {
   " \ 'include_complete' : 1,
   " \ 'omni_complete' : 1
 " \ }
-" autocmd FileType ruby let g:neocomplcache_source_disable = {
+" autocmd FileType ruby let g:neocomplete#source_disable = {
   " \ 'include_complete' : 1
 " \ }
 
 "インクルードパスの指定
-let g:neocomplcache_include_paths = {
+let g:neocomplete#include_paths = {
   \ 'cpp'  : '.,/opt/local/include/gcc46/c++,/opt/local/include,/usr/include',
   \ 'c'    : '.,/usr/include',
   \ 'ruby' : '.,$HOME/.rvm/rubies/**/lib/ruby/1.8/',
   \ }
 "インクルード文のパターンを指定
-let g:neocomplcache_include_patterns = {
+let g:neocomplete#include_patterns = {
   \ 'cpp' : '^\s*#\s*include',
   \ 'ruby' : '^\s*require',
   \ 'perl' : '^\s*use',
   \ }
 "インクルード先のファイル名の解析パターン
-let g:neocomplcache_include_exprs = {
+let g:neocomplete#include_exprs = {
   \ 'ruby' : substitute(v:fname,'::','/','g')
   \ }
 " ファイルを探す際に、この値を末尾に追加したファイルも探す。
-let g:neocomplcache_include_suffixes = {
+let g:neocomplete#include_suffixes = {
   \ 'ruby' : '.rb',
   \ 'haskell' : '.hs'
   \ }
 
-" for rsense
-if !exists('g:neocomplcache_omni_patterns')
-  let g:neocomplcache_omni_patterns = {}
-endif
-let g:rsenseUseOmniFunc = 1
-let g:rsenseHome = expand('~/src/rsense-0.3')
+"" Python
+let g:jedi#auto_vim_configuration = 0
+let g:jedi#popup_select_first = 0
 
-"" Ruby
-let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
-"" Go
-let g:neocomplcache_omni_patterns.go = '\h\w*\.\?'
+if !exists('g:neocomplete#force_omni_input_patterns')
+    let g:neocomplete#force_omni_input_patterns = {}
+endif
+"let g:neocomplete#force_omni_input_patterns.python = '\%([^. \t]\.\|^\s*@\|^\s*from\s.\+import \|^\s*from \|^\s*import \)\w*'
+let g:neocomplete#force_omni_input_patterns.python = '\h\w*\|[^. \t]\.\w*'

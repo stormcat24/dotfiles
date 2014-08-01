@@ -37,9 +37,10 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 "" 編集系
 """" コメントアウト
   NeoBundle 'scrooloose/nerdcommenter.git'
-  "NeoBundle 'YankRing.vim'
+  NeoBundle 'YankRing.vim'
   NeoBundle 'Gundo'
   NeoBundle 'Align'
+  NeoBundle 'tpope/vim-surround'
   NeoBundle 'xmledit'
 """" スペルチェック
   NeoBundle 'mattn/excitetranslate-vim'
@@ -57,10 +58,12 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle 'editorconfig/editorconfig-vim'
 """" markdown
   NeoBundle 'kannokanno/previm'
+"""" multiple-cursors
+  NeoBundle 'terryma/vim-multiple-cursors'
 
 "" 補完系
-  NeoBundle 'Shougo/neocomplcache'
-  NeoBundle 'Shougo/neosnippet.git'
+  NeoBundle 'Shougo/neocomplete.vim'
+  NeoBundle 'Shougo/neosnippet-snippets'
 
 "" 検索系
   NeoBundle 'grep.vim'
@@ -95,10 +98,22 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'nono/vim-handlebars'
 """" Scala
     NeoBundle 'yuroyoro/vim-scala'
-"""" Clojure
-    NeoBundle 'jondistad/vimclojure'
 """" Python
+    let $PATH = "~/.pyenv/shims:".$PATH
     NeoBundle 'yuroyoro/vim-python'
+    NeoBundleLazy 'davidhalter/jedi-vim', {
+      \ "autoload": {
+      \   "filetypes": ["python", "python3", "djangohtml"],
+      \ },
+      \ "build": {
+      \   "mac": "pip install jedi",
+      \   "unix": "pip install jedi",
+      \ }}
+    NeoBundleLazy "lambdalisue/vim-pyenv", {
+      \ "depends": ['davidhalter/jedi-vim'],
+      \ "autoload": {
+      \   "filetypes": ["python", "python3", "djangohtml"]
+      \ }}
 """" CoffeeScript
     NeoBundle 'kchmck/vim-coffee-script'
 """" TypeScript
@@ -109,18 +124,19 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 
 """ その他
     NeoBundle 'tpope/vim-markdown'
+    "NeoBundle 'wellle/tmux-complete.vim'
 
 "" Unite
     NeoBundle 'Shougo/unite.vim'
     NeoBundle 'tsukkee/unite-help'
     NeoBundle 'h1mesuke/unite-outline'
-    NeoBundle 'basyura/unite-rails'
     NeoBundle 'thinca/vim-unite-history'
     NeoBundle 'tsukkee/unite-tag'
     NeoBundle 'choplin/unite-vim_hacks'
 
 "" ツール、ユーティリティ
     NeoBundle 'cecutil'
+    NeoBundle 'Shougo/vimfiler.vim'
     NeoBundle 'Shougo/vimshell.git'
     NeoBundle 'Shougo/vimproc', {
           \ 'build' : {
@@ -130,16 +146,12 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
           \     'unix' : 'make -f make_unix.mak',
           \    },
           \ }
-    NeoBundle 'The-NERD-tree'
     NeoBundle 'thinca/vim-openbuf'
     NeoBundle 'bling/vim-airline'
     NeoBundle 'yuroyoro/vimdoc_ja'
     NeoBundle 'airblade/vim-gitgutter'
     NeoBundle 'gregsexton/gitv'
-    NeoBundle 'itchyny/calendar.vim'
-    NeoBundle 't9md/vim-choosewin'
     NeoBundle 'supermomonga/projectlocal.vim'
-    NeoBundle 'mattn/excelview-vim'
 
 "" TweetVim関連
     NeoBundle 'basyura/TweetVim'

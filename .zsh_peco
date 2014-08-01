@@ -1,0 +1,75 @@
+# peco
+function peco-select-history() {
+    local tac
+    if which tac > /dev/null; then
+        tac="tac"
+    else
+        tac="tail -r"
+    fi
+    BUFFER=$(history -n 1 | \
+        eval $tac | \
+        peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history
+
+function peco-select-branch() {
+    local target="$(git for-each-ref --format='%(refname:short) | %(committerdate:relative) | %(committername) | %(subject)' --sort=-committerdate refs/heads refs/remotes \
+        | column -t -s '|' \
+        | grep -ve "^heads" \
+        | peco \
+        | awk '{print $1}')"
+    if [ -z "$target" ]; then
+        zle clear-screen
+        return
+    fi
+
+    target_branch=${target#remotes\/}
+    if [ -z "`git branch | grep ${target_branch}`" ]; then
+        BUFFER="git checkout -b $target_branch $target"
+    else
+        BUFFER="git checkout $target_branch"
+    fi
+    zle accept-line
+}
+zle -N peco-select-branch
+bindkey '^g' peco-select-branch
+
+function peco-src () {
+    local selected_dir=$(ghq list --full-path | peco --query "$LBUFFER")
+    if [ -n "$selected_dir" ]; then
+        BUFFER="cd ${selected_dir}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-src
+bindkey '^f' peco-src
+
+function peco-ssh () {
+    local server=$(cat ~/.ssh/config \
+        | grep "Host " \
+        | column -t \
+        | sed -e 's/Host  //g' \
+        | peco --query "$LBUFFER")
+    if [ -z "$server" ]; then
+        zle clear-screen
+    else
+        BUFFER="ssh $server"
+        zle accept-line
+    fi
+}
+zle -N peco-ssh
+bindkey '^w' peco-ssh
+
+function peco-docker-images () {
+  local image = $(docker images \
+      | grep -v REPOSITORY \
+      | peco --query $LBUFFER
+                  )
+  echo $BUFFER
+}
+zle -N peco-docker-images
+bindkey '^n' peco-docker-images

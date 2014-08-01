@@ -1,0 +1,20 @@
+# define aliases
+
+#Unix
+## ls
+alias ll='ls -lh'
+alias la='ls -lha'
+alias ls='ls -Gh'
+
+## vim
+alias v='vim'
+
+# git
+## WIP commit
+alias gip='git commit -m "[WIP]"'
+
+# ghq
+alias repo='ghq look'
+
+# docker
+alias bd='boot2docker'
