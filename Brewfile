@@ -45,7 +45,6 @@ install openssl
 install pcre
 install pkg-config
 install ppl011
-install python
 install rbenv
 install readline
 install reattach-to-user-namespace
@@ -61,8 +60,6 @@ install v8
 install vim --override-system-vi --with-lua --with-ruby --with-python --with-python3
 install wget
 install zsh
-tap peco/peco
-install peco
 
 # link
 link libxml2 --force
@@ -75,17 +72,15 @@ install brew-cask
 
 # cask packages
 cask install airdisplay
-cask install atom
 cask install cyberduck
 cask install diskwave
 cask install dropbox
 cask install evernote
-cask install firefox
 cask install github
 cask install google-chrome
 cask install google-drive
 #cask install gpgtools
-cask install keyremap4macbook
+cask install karabiner
 cask install iterm2
 cask install lighttable
 cask install mysqlworkbench
