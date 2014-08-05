@@ -95,5 +95,13 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 
+function peco-select-branch() {
+    git branch -a | peco --query "$LBUFFER" | awk '{print $2}' | xargs git checkout
+    zle clear-screen
+}
+zle -N peco-select-branch
+bindkey '^g' peco-select-branch
+
+
 export TERM='xterm-256color'
 
