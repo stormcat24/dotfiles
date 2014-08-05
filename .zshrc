@@ -97,6 +97,7 @@ bindkey '^r' peco-select-history
 
 function peco-select-branch() {
     git branch -a | peco --query "$LBUFFER" | awk '{print $2}' | xargs git checkout
+    echo
     zle clear-screen
 }
 zle -N peco-select-branch
