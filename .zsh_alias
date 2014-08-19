@@ -12,3 +12,6 @@ alias gip='git commit -m "[WIP]"'
 
 # ghq
 alias repo='ghq look'
+
+# docker
+alias bd='boot2docker'

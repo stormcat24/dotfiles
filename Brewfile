@@ -12,6 +12,7 @@ install cmake
 install ctags
 install curl
 install docker
+install boot2docker
 #install fontconfig
 install fontforge
 install freetype
