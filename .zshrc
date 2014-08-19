@@ -39,6 +39,11 @@ setopt auto_param_keys
 # ディレクトリ名補完で末尾にスラッシュを付与
 setopt auto_param_slash
 
+# プログラム関連の設定をロード
+if [ -e ~/.zsh_program ]; then
+    source ~/.zsh_program
+fi
+
 # その端末固有の設定をロードする
 if [ -e ~/.zsh_local ]; then
     source ~/.zsh_local
@@ -103,6 +108,16 @@ function peco-select-branch() {
 zle -N peco-select-branch
 bindkey '^g' peco-select-branch
 
+function peco-src () {
+    local selected_dir=$(ghq list --full-path | peco --query "$LBUFFER")
+    if [ -n "$selected_dir" ]; then
+        BUFFER="cd ${selected_dir}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-src
+bindkey '^f' peco-src
 
 export TERM='xterm-256color'
 

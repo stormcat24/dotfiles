@@ -9,3 +9,9 @@ $ sudo vim /etc/paths
 /usr/sbin
 /sbin
 ```
+
+### jedi.vim
+jedi.vimはjediというpythonプラグインに依存しているので， jediのプラグインのディレクトリ内で
+```bash
+$ git submodule update --init
+```

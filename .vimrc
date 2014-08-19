@@ -4,9 +4,6 @@ source ~/dotfiles/.vimrc.bundle
 "基本設定
 source ~/dotfiles/.vimrc.basic
 
-"関数定義
-source ~/dotfiles/.vimrc.function
-
 "エディタ設定
 source ~/dotfiles/.vimrc.editor
 
@@ -23,5 +20,4 @@ source ~/dotfiles/.vimrc.key
 source ~/dotfiles/.vimrc.plugins
 
 "補完設定
-source ~/dotfiles/.vimrc.neocomplcache
-
+source ~/dotfiles/.vimrc.neocomplete

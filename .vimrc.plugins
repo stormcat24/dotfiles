@@ -36,6 +36,9 @@ let g:jscomplete_use = ['dom', 'moz', 'es6th']
 let g:EasyMotion_do_mapping = 0
 nmap s <Plug>(easymotion-s2)
 
+" Vimfiler
+let g:vimfiler_as_default_explorer = 1
+
 " go
 if $GOROOT != ''
   set rtp+=$GOROOT/misc/vim
