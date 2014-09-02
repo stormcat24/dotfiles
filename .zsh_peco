@@ -1,0 +1,52 @@
+# peco
+function peco-select-history() {
+    local tac
+    if which tac > /dev/null; then
+        tac="tac"
+    else
+        tac="tail -r"
+    fi
+    BUFFER=$(history -n 1 | \
+        eval $tac | \
+        peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history
+
+function peco-select-branch() {
+    #git branch -a | peco --query "$LBUFFER" | awk '{print $2}' | xargs git checkout
+    #git branch -a | peco --query "$LBUFFER" | awk '{print $1}' | xargs echo
+    #echo
+    #zle clear-screen
+
+    # commiterdate:relativeを commiterdate:localに変更すると普通の時刻表示
+    local selected_line="$(git for-each-ref --format='%(refname:short) | %(committerdate:relative) | %(committername) | %(subject)' --sort=-committerdate refs/heads refs/remotes \
+        | column -t -s '|' \
+        | peco \
+        | head -n 1 \
+        | awk '{print $1}')"
+    #if [ -n "$selected_line" ]; then
+        #BUFFER="${current_buffer} ${selected_line}"
+        #CURSOR=$#BUFFER
+        ##zle accept-line
+    #fi
+    BUFFER="git checkout ${selected_line}"
+    # TODO すでにcheckoutしているかの制御
+    zle accept-line
+    #zle clear-screen
+}
+zle -N peco-select-branch
+bindkey '^g' peco-select-branch
+
+function peco-src () {
+    local selected_dir=$(ghq list --full-path | peco --query "$LBUFFER")
+    if [ -n "$selected_dir" ]; then
+        BUFFER="cd ${selected_dir}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-src
+bindkey '^f' peco-src

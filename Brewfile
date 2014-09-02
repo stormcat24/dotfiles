@@ -12,7 +12,6 @@ install cmake
 install ctags
 install curl
 install docker
-install boot2docker
 #install fontconfig
 install fontforge
 install freetype
@@ -25,7 +24,7 @@ install git-flow
 install giter8
 install gmp4
 install gradle
-#install go
+install go
 install hub
 install icu4c
 install jpeg
@@ -73,22 +72,28 @@ install brew-cask
 
 # cask packages
 cask install airdisplay
+cask install atom
 cask install cyberduck
 cask install diskwave
 cask install dropbox
 cask install evernote
+cask install firefox
 cask install github
 cask install google-chrome
 cask install google-drive
 #cask install gpgtools
-cask install karabiner
+cask install keyremap4macbook
+#cask install kobito
+#cask install intellij-idea-ce
 cask install iterm2
 cask install lighttable
 cask install mysqlworkbench
 cask install node-webkit
 cask install nosleep
 cask install hipchat
+cask install silverlight
 cask install skype
+cask install stay
 cask install tunnelblick
 cask install remote-desktop-connection
 cask install vagrant
@@ -98,4 +103,4 @@ cask install visualvm
 cask install xquartz
 
 # finalize
-cleanup
+#cleanup

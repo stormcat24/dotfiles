@@ -84,42 +84,18 @@ zstyle ':completion:*' list-separator '-->'
 zstyle ':completion:*:manuals' separate-sections true
 
 # peco
-function peco-select-history() {
-    local tac
-    if which tac > /dev/null; then
-        tac="tac"
-    else
-        tac="tail -r"
-    fi
-    BUFFER=$(history -n 1 | \
-        eval $tac | \
-        peco --query "$LBUFFER")
-    CURSOR=$#BUFFER
-    zle clear-screen
-}
-zle -N peco-select-history
-bindkey '^r' peco-select-history
-
-function peco-select-branch() {
-    git branch -a | peco --query "$LBUFFER" | awk '{print $2}' | xargs git checkout
-    echo
-    zle clear-screen
-}
-zle -N peco-select-branch
-bindkey '^g' peco-select-branch
-
-function peco-src () {
-    local selected_dir=$(ghq list --full-path | peco --query "$LBUFFER")
-    if [ -n "$selected_dir" ]; then
-        BUFFER="cd ${selected_dir}"
-        zle accept-line
-    fi
-    zle clear-screen
-}
-zle -N peco-src
-bindkey '^f' peco-src
+if [ -e ~/.zsh_peco ]; then
+    source ~/.zsh_peco
+fi
 
 export TERM='xterm-256color'
 
-export PATH="$HOME/.gobrew/bin:$PATH"
-eval "$(gobrew init -)"
+#export PATH="$HOME/.gobrew/bin:$PATH"
+#eval "$(gobrew init -)"
+#export PATH="$HOME/.gobrew/bin:$PATH"
+#eval "$(gobrew init -)"
+
+# boot2docker
+BD_IP=`bd ip`
+export DOCKER_HOST=tcp://$BD_IP:2375
+
