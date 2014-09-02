@@ -121,3 +121,5 @@ bindkey '^f' peco-src
 
 export TERM='xterm-256color'
 
+export PATH="$HOME/.gobrew/bin:$PATH"
+eval "$(gobrew init -)"

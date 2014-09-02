@@ -25,7 +25,7 @@ install git-flow
 install giter8
 install gmp4
 install gradle
-install go
+#install go
 install hub
 install icu4c
 install jpeg

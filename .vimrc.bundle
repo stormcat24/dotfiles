@@ -58,6 +58,8 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle 'editorconfig/editorconfig-vim'
 """" markdown
   NeoBundle 'kannokanno/previm'
+"""" multiple-cursors
+  NeoBundle 'terryma/vim-multiple-cursors'
 
 "" 補完系
   NeoBundle 'Shougo/neocomplete.vim'
