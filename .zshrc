@@ -96,6 +96,4 @@ export TERM='xterm-256color'
 #eval "$(gobrew init -)"
 
 # boot2docker
-BD_IP=`bd ip`
-export DOCKER_HOST=tcp://$BD_IP:2375
-
+export FORWARD_DOCKER_PORTS=1

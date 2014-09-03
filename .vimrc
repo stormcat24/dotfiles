@@ -1,23 +1,23 @@
 "vundle設定
-source ~/dotfiles/.vimrc.bundle
+source ~/.vimrc.bundle
 
 "基本設定
-source ~/dotfiles/.vimrc.basic
+source ~/.vimrc.basic
 
 "エディタ設定
-source ~/dotfiles/.vimrc.editor
+source ~/.vimrc.editor
 
 "色設定
-source ~/dotfiles/.vimrc.colors
+source ~/.vimrc.colors
 
 "エンコード設定
-source ~/dotfiles/.vimrc.encoding
+source ~/.vimrc.encoding
 
 "キーマップ設定
-source ~/dotfiles/.vimrc.key
+source ~/.vimrc.key
 
 "プラグイン設定
-source ~/dotfiles/.vimrc.plugins
+source ~/.vimrc.plugins
 
 "補完設定
-source ~/dotfiles/.vimrc.neocomplete
+source ~/.vimrc.neocomplete
