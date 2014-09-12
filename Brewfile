@@ -100,6 +100,7 @@ cask install vagrant
 cask install vagrant-manager
 cask install virtualbox
 cask install visualvm
+cask install webstorm
 cask install xquartz
 
 # finalize
