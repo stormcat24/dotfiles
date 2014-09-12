@@ -11,11 +11,4 @@ if [  $? -ne 0 -a -e ./Brewfile ]; then
     exit 1
 fi
 
-# gobrew
-if [ -z `which gobrew` ]; then
-    curl -L https://raw.github.com/grobins2/gobrew/master/tools/install.sh | sh
-    wget --no-check-certificate https://raw.github.com/grobins2/gobrew/master/tools/install.sh -O - | sh
-fi
-
-
 brew bundle Brewfile

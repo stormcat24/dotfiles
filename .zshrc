@@ -90,10 +90,5 @@ fi
 
 export TERM='xterm-256color'
 
-#export PATH="$HOME/.gobrew/bin:$PATH"
-#eval "$(gobrew init -)"
-#export PATH="$HOME/.gobrew/bin:$PATH"
-#eval "$(gobrew init -)"
-
 # boot2docker
 export FORWARD_DOCKER_PORTS=1
