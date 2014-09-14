@@ -79,12 +79,12 @@ cask install dropbox
 cask install evernote
 cask install firefox
 cask install github
+cask install gitter
 cask install google-chrome
 cask install google-drive
 #cask install gpgtools
 cask install keyremap4macbook
-#cask install kobito
-#cask install intellij-idea-ce
+cask install intellij-idea-ce
 cask install iterm2
 cask install lighttable
 cask install mysqlworkbench
@@ -104,4 +104,4 @@ cask install webstorm
 cask install xquartz
 
 # finalize
-#cleanup
+cleanup
