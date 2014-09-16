@@ -1,23 +1,8 @@
-"NERDTree
-"let file_name = expand("%")
-"if has('vim_starting') &&  file_name == ""
-  "autocmd VimEnter * NERDTree ./
-"endif
-
-
 " JavaScript Lint
 if !exists('b:current_compiler')
   compiler jsl
 endif
 autocmd QuickFixCmdPost make copen
-
-" quickrun for Node
-let g:quickrun_config = {
-    \ "javascript": {
-    \   "command": "node",
-    \   "tempfile": "{tempname()}.js"
-    \   }
-    \ }
 
 autocmd FileType gitv call s:my_gitv_settings()
 function! s:my_gitv_settings()
@@ -40,6 +25,29 @@ nmap s <Plug>(easymotion-s2)
 let g:vimfiler_as_default_explorer = 1
 
 " go
-if $GOROOT != ''
-  set rtp+=$GOROOT/misc/vim
-endif
+set runtimepath+=$GOROOT/misc/vim
+autocmd BufNewFile,BufRead *.go set filetype=go
+
+" quickrun
+let g:quickrun_config = {}
+"" enable vimproc
+let g:quickrun_config['*'] = {
+    \  'runner': 'vimproc',
+    \  'split': 'below'
+    \}
+
+"" Node
+let g:quickrun_config.javascript = {
+    \  'command': 'node',
+    \  'tempfile': '{tempname()}.js'
+    \}
+
+"" Go
+let g:quickrun_config.go = {
+    \  'command': 'go',
+    \  'exec': '%c run *.go'
+    \}
+
+
+" syntastic
+let g:syntastic_go_checkers = ['go', 'golint']

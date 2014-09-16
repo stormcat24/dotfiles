@@ -1,3 +1,6 @@
+filetype off
+filetype plugin indent off
+
 "vundle設定
 source ~/.vimrc.bundle
 
@@ -21,3 +24,5 @@ source ~/.vimrc.plugins
 
 "補完設定
 source ~/.vimrc.neocomplete
+
+filetype plugin indent on

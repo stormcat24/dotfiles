@@ -1,7 +1,5 @@
 set nocompatible
 
-filetype off
-
 if has('vim_starting')
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
@@ -89,6 +87,8 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 
 "" シンタックス
 """ 言語
+"""" syntax
+    NeoBundle 'scrooloose/syntastic'
 """" Java
     NeoBundle 'vim-scripts/javacomplete'
 """" Javascript
@@ -98,22 +98,6 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'nono/vim-handlebars'
 """" Scala
     NeoBundle 'yuroyoro/vim-scala'
-"""" Python
-    let $PATH = "~/.pyenv/shims:".$PATH
-    NeoBundle 'yuroyoro/vim-python'
-    NeoBundleLazy 'davidhalter/jedi-vim', {
-      \ "autoload": {
-      \   "filetypes": ["python", "python3", "djangohtml"],
-      \ },
-      \ "build": {
-      \   "mac": "pip install jedi",
-      \   "unix": "pip install jedi",
-      \ }}
-    NeoBundleLazy "lambdalisue/vim-pyenv", {
-      \ "depends": ['davidhalter/jedi-vim'],
-      \ "autoload": {
-      \   "filetypes": ["python", "python3", "djangohtml"]
-      \ }}
 """" CoffeeScript
     NeoBundle 'kchmck/vim-coffee-script'
 """" TypeScript
@@ -160,17 +144,6 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'basyura/bitly.vim'
 
 " ***** Original Settings End *****
-
-filetype plugin indent on     " Required!
-"
-" Brief help
-" :NeoBundleList          - list
-" configured bundles
-" :NeoBundleInstall(!)    -
-" install(update) bundles
-" :NeoBundleClean(!)      - confirm(or
-" auto-approve) removal of unused
-" bundles
 
 " Installation check.
 NeoBundleCheck
