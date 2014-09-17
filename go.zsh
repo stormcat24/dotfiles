@@ -10,3 +10,6 @@ go get github.com/motemen/ghq
 
 # peco
 go get github.com/lestrrat/peco/cmd/peco/
+
+# gotags
+go get github.com/jstemmer/gotags

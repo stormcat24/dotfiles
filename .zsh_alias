@@ -18,3 +18,6 @@ alias repo='ghq look'
 
 # docker
 alias bd='boot2docker'
+
+# ctags
+alias ctags="`brew --prefix`/opt/ctags/bin/ctags"

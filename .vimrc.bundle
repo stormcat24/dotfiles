@@ -21,10 +21,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" vim-scripts repos
 NeoBundle 'L9'
-NeoBundle 'FuzzyFinder'
-NeoBundle 'rails.vim'
 " Non github repos
 NeoBundle 'git://git.wincent.com/command-t.git'
 " Non git repos
@@ -82,8 +79,6 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 "" プログラミング
 """" quickrun
     NeoBundle 'thinca/vim-quickrun'
-"""" メソッド宣言、変数一覧を表示
-    NeoBundle 'taglist.vim'
 
 "" シンタックス
 """ 言語
