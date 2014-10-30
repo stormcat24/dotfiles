@@ -21,3 +21,6 @@ alias bd='boot2docker'
 
 # ctags
 alias ctags="`brew --prefix`/opt/ctags/bin/ctags"
+
+# gnu-sed
+alias sed='gsed'

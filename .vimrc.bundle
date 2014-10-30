@@ -55,6 +55,8 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle 'kannokanno/previm'
 """" multiple-cursors
   NeoBundle 'terryma/vim-multiple-cursors'
+"""" キャメルスネーク変換
+  NeoBundle 'tpope/vim-abolish'
 
 "" 補完系
   NeoBundle 'Shougo/neocomplete.vim'
@@ -99,7 +101,8 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'leafgarland/typescript-vim'
     NeoBundle 'clausreinke/typescript-tools'
 """" Go
-    NeoBundle 'Blackrush/vim-gocode'
+    "NeoBundle 'Blackrush/vim-gocode'
+    NeoBundle 'fatih/vim-go'
 
 """ その他
     NeoBundle 'tpope/vim-markdown'

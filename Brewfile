@@ -11,7 +11,9 @@ install cloog-ppl015
 install cmake
 install ctags
 install curl
+install dart
 install docker
+install direnv
 #install fontconfig
 install fontforge
 install freetype
@@ -23,10 +25,13 @@ install git
 install git-flow
 install giter8
 install gmp4
+install gnu-sed
 install gradle
 install go
+install ghi
 install hub
 install icu4c
+install imagemagick --with-libtiff
 install jpeg
 #install jsl
 install libiconv
@@ -56,6 +61,7 @@ install sbt
 install scala
 install tig
 install tmux
+install ttyrec
 install v8
 install vim --override-system-vi --with-lua --with-ruby --with-python --with-python3
 install wget
@@ -69,6 +75,7 @@ link libxslt --force
 # brew-cask
 tap phinze/homebrew-cask
 install brew-cask
+tap dart-lang/dart
 
 # cask packages
 cask install airdisplay

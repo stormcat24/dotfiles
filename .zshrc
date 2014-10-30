@@ -16,7 +16,8 @@ fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 
 autoload -Uz compinit && compinit
 
-
+# zsh: no matches found対策
+setopt nonomatch
 
 # cd無しでcd
 setopt auto_cd
@@ -93,3 +94,8 @@ export TERM='xterm-256color'
 
 # boot2docker
 export FORWARD_DOCKER_PORTS=1
+
+# editor
+export EDITOR='vim'
+# direnv(requires EDITOR)
+eval "$(direnv hook zsh)"
