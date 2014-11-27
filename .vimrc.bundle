@@ -4,10 +4,9 @@ if has('vim_starting')
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
-
-" Let NeoBundle manage NeoBundle
+call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
+call neobundle#end()
 
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f
@@ -107,6 +106,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 """ その他
     NeoBundle 'tpope/vim-markdown'
     "NeoBundle 'wellle/tmux-complete.vim'
+    NeoBundle 'ekalinin/Dockerfile.vim'
 
 "" Unite
     NeoBundle 'Shougo/unite.vim'

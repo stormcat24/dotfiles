@@ -9,3 +9,4 @@ go get github.com/jstemmer/gotags
 go get github.com/motemen/ghq
 go get github.com/lestrrat/peco/cmd/peco/
 go get github.com/tools/godep
+go get github.com/docker/libcontainer/nsinit

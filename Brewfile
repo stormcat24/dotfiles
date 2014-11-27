@@ -66,6 +66,7 @@ install v8
 install vim --override-system-vi --with-lua --with-ruby --with-python --with-python3
 install wget
 install zsh
+install fig
 
 # link
 link libxml2 --force
@@ -94,7 +95,6 @@ cask install keyremap4macbook
 cask install intellij-idea-ce
 cask install iterm2
 cask install lighttable
-cask install mysqlworkbench
 cask install node-webkit
 cask install nosleep
 cask install hipchat
