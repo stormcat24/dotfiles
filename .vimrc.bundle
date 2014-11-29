@@ -28,6 +28,8 @@ NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
 NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 
 " ***** Original Setting Start *****
+"" OS系
+  NeoBundle 'sudo.vim'
 "" 編集系
 """" コメントアウト
   NeoBundle 'scrooloose/nerdcommenter.git'
@@ -68,6 +70,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle "kien/ctrlp.vim"
   NeoBundle 'majutsushi/tagbar'
   NeoBundle 'osyo-manga/vim-anzu'
+  NeoBundle 'yuratomo/w3m.vim'
 
 "" カラースキーマ
   NeoBundle 'desert256.vim'

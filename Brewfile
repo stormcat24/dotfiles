@@ -65,6 +65,7 @@ install ttyrec
 install v8
 install vim --override-system-vi --with-lua --with-ruby --with-python --with-python3
 install wget
+install w3m
 install zsh
 install fig
 
