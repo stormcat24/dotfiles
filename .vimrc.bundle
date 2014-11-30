@@ -95,6 +95,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'jQuery'
     NeoBundle 'mattn/jscomplete-vim'
     NeoBundle 'nono/vim-handlebars'
+    NeoBundle 'Simple-Javascript-Indenter'
 """" Scala
     NeoBundle 'yuroyoro/vim-scala'
 """" CoffeeScript

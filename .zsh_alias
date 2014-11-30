@@ -24,3 +24,6 @@ alias ctags="`brew --prefix`/opt/ctags/bin/ctags"
 
 # gnu-sed
 alias sed='gsed'
+
+# vim sudo:/etc/hosts
+alias hosts='vim sudo:/etc/hosts'
