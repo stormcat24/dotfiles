@@ -1390,11 +1390,11 @@
 			<key>Name</key>
 			<string>tehepero</string>
 			<key>Non Ascii Font</key>
-			<string>mplus-1c-light 14</string>
+			<string>mplus-1c-medium 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>mplus-1m-light 14</string>
+			<string>mplus-1m-medium 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
