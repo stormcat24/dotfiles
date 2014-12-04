@@ -14,10 +14,8 @@ install curl
 install dart
 install docker
 install direnv
-#install fontconfig
 install fontforge
 install freetype
-install gcc46
 install gcc47
 install gdbm
 install gettext
@@ -33,7 +31,6 @@ install hub
 install icu4c
 install imagemagick --with-libtiff
 install jpeg
-#install jsl
 install libiconv
 install libxml2
 install libevent
@@ -81,7 +78,6 @@ tap dart-lang/dart
 
 # cask packages
 cask install airdisplay
-cask install atom
 cask install cyberduck
 cask install diskwave
 cask install dropbox
@@ -99,9 +95,7 @@ cask install lighttable
 cask install node-webkit
 cask install nosleep
 cask install hipchat
-cask install silverlight
 cask install skype
-cask install stay
 cask install tunnelblick
 cask install remote-desktop-connection
 cask install vagrant
