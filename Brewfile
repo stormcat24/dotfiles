@@ -82,7 +82,6 @@ cask install cyberduck
 cask install diskwave
 cask install dropbox
 cask install evernote
-cask install firefox
 cask install github
 cask install gitter
 cask install google-chrome
@@ -97,6 +96,7 @@ cask install node-webkit
 cask install nosleep
 cask install hipchat
 cask install skype
+cask install slack
 cask install tunnelblick
 cask install remote-desktop-connection
 cask install vagrant
