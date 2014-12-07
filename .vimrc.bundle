@@ -94,8 +94,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'JavaScript-syntax'
     NeoBundle 'jQuery'
     NeoBundle 'mattn/jscomplete-vim'
-    "NeoBundle 'nono/vim-handlebars'
-    "NeoBundle 'Simple-Javascript-Indenter'
+    NeoBundle 'elzr/vim-json'
 """" Scala
     NeoBundle 'yuroyoro/vim-scala'
 """" CoffeeScript
@@ -104,12 +103,13 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'leafgarland/typescript-vim'
     NeoBundle 'clausreinke/typescript-tools'
 """" Go
-    "NeoBundle 'Blackrush/vim-gocode'
     NeoBundle 'fatih/vim-go'
+"""" CSS
+    NeoBundle 'css_color.vim'
+    NeoBundle 'csscomb/csscomb-for-vim'
 
 """ その他
     NeoBundle 'tpope/vim-markdown'
-    "NeoBundle 'wellle/tmux-complete.vim'
     NeoBundle 'ekalinin/Dockerfile.vim'
 
 "" Unite
@@ -119,6 +119,9 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'thinca/vim-unite-history'
     NeoBundle 'tsukkee/unite-tag'
     NeoBundle 'choplin/unite-vim_hacks'
+
+"" GitHub
+    NeoBundle 'jaxbot/github-issues.vim'
 
 "" ツール、ユーティリティ
     NeoBundle 'cecutil'

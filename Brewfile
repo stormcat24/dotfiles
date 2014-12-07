@@ -90,6 +90,7 @@ cask install google-drive
 #cask install gpgtools
 cask install keyremap4macbook
 cask install intellij-idea-ce
+cask install android-studio
 cask install iterm2
 cask install lighttable
 cask install node-webkit
