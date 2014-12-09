@@ -72,8 +72,7 @@ link libiconv --force
 link libxslt --force
 
 # brew-cask
-tap phinze/homebrew-cask
-install brew-cask
+install caskroom/cask/brew-cask
 tap dart-lang/dart
 
 # cask packages
