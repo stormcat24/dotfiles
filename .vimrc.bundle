@@ -121,7 +121,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'choplin/unite-vim_hacks'
 
 "" GitHub
-    NeoBundle 'jaxbot/github-issues.vim'
+    "NeoBundle 'jaxbot/github-issues.vim'
 
 "" ツール、ユーティリティ
     NeoBundle 'cecutil'
