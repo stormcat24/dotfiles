@@ -41,6 +41,7 @@ install libtiff
 install libtool
 install libyaml
 install libxslt
+install maven
 install mercurial
 install mpfr2
 install openssl
