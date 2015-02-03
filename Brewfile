@@ -2,6 +2,8 @@ update
 upgrade
 
 # brew packages
+install android-studio
+install appcode
 install ansible
 install autoconf
 install automake
