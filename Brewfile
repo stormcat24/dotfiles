@@ -68,6 +68,8 @@ install wget
 install w3m
 install zsh
 install fig
+install terraform
+install packer
 
 # link
 link libxml2 --force
@@ -102,7 +104,6 @@ cask install slack
 cask install tunnelblick
 cask install remote-desktop-connection
 cask install vagrant
-cask install vagrant-manager
 cask install virtualbox
 cask install visualvm
 cask install webstorm
