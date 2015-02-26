@@ -92,8 +92,6 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'vim-scripts/javacomplete'
 """" Javascript
     NeoBundle 'JavaScript-syntax'
-    NeoBundle 'jQuery'
-    NeoBundle 'mattn/jscomplete-vim'
     NeoBundle 'elzr/vim-json'
 """" Scala
     NeoBundle 'yuroyoro/vim-scala'
@@ -119,9 +117,6 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'thinca/vim-unite-history'
     NeoBundle 'tsukkee/unite-tag'
     NeoBundle 'choplin/unite-vim_hacks'
-
-"" GitHub
-    "NeoBundle 'jaxbot/github-issues.vim'
 
 "" ツール、ユーティリティ
     NeoBundle 'cecutil'
