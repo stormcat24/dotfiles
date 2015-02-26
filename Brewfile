@@ -109,6 +109,7 @@ cask install visualvm
 cask install webstorm
 cask install xquartz
 cask install camtwist
+cask install adobe-air
 
 # finalize
 cleanup
