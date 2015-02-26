@@ -108,6 +108,7 @@ cask install virtualbox
 cask install visualvm
 cask install webstorm
 cask install xquartz
+cask install camtwist
 
 # finalize
 cleanup
