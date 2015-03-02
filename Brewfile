@@ -70,6 +70,7 @@ install zsh
 install fig
 install terraform
 install packer
+install adobe-air-sdk
 
 # link
 link libxml2 --force
