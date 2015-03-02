@@ -109,6 +109,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 """ その他
     NeoBundle 'tpope/vim-markdown'
     NeoBundle 'ekalinin/Dockerfile.vim'
+    NeoBundle 'ryanoasis/vim-webdevicons'
 
 "" Unite
     NeoBundle 'Shougo/unite.vim'
