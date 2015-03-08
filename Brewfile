@@ -111,6 +111,7 @@ cask install webstorm
 cask install xquartz
 cask install camtwist
 cask install adobe-air
+cask install intel-haxm
 
 # finalize
 cleanup
