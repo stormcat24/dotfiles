@@ -100,7 +100,6 @@ cask install 0xdbe-eap
 cask install iterm2
 cask install lighttable
 cask install node-webkit
-cask install nosleep
 cask install hipchat
 cask install skype
 cask install slack
@@ -115,6 +114,7 @@ cask install camtwist
 cask install adobe-air
 cask install android-studio
 cask install intel-haxm
+cask install insomniax
 
 # finalize
 cleanup
