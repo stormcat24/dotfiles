@@ -114,6 +114,7 @@ cask install xquartz
 cask install camtwist
 cask install adobe-air
 cask install android-studio
+cask install intel-haxm
 
 # finalize
 cleanup
