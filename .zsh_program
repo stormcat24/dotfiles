@@ -4,3 +4,18 @@ if [ -d "${PYENV_ROOT}" ]; then
     export PATH=${PYENV_ROOT}/bin:$PATH
     eval "$(pyenv init -)"
 fi
+
+# rbenv
+eval "$(rbenv init -)"
+
+# Go
+export GOROOT=`go env GOROOT`
+export GOPATH=$HOME/_go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# Aeromock
+AEROMOCK_HOME=~/.aeromock/applications/current
+export PATH=$PATH:$AEROMOCK_HOME
+
+export M2_REPO_USER=aeromock
+export M2_REPO_PASSWORD=bfspnpdl

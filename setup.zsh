@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
-DOT_FILES_DIR=$HOME/.ghq/github.com/stormcat24/dotfiles
+GHQ_HOME=$HOME/repos
+DOT_FILES_DIR=$GHQ_HOME/github.com/stormcat24/dotfiles
 
 if [ ! -e $DOT_FILES_DIR ]; then
   echo "not exists $DOT_FILES_DIR."

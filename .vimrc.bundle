@@ -93,6 +93,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 """" Javascript
     NeoBundle 'JavaScript-syntax'
     NeoBundle 'elzr/vim-json'
+    NeoBundle 'orlandov/jsl.vim'
 """" Scala
     NeoBundle 'yuroyoro/vim-scala'
 """" CoffeeScript

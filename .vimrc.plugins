@@ -1,7 +1,7 @@
 " JavaScript Lint
-if !exists('b:current_compiler')
-  compiler jsl
-endif
+"if !exists('b:current_compiler')
+  "compiler jsl
+"endif
 autocmd QuickFixCmdPost make copen
 
 autocmd FileType gitv call s:my_gitv_settings()
