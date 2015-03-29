@@ -98,7 +98,6 @@ cask install android-studio
 cask install clion-eap
 cask install 0xdbe-eap
 cask install iterm2
-cask install lighttable
 cask install node-webkit
 cask install hipchat
 cask install skype
@@ -116,6 +115,7 @@ cask install android-studio
 cask install intel-haxm
 cask install insomniax
 cask install flashlight
+cask install kindle
 
 # finalize
 cleanup
