@@ -72,6 +72,8 @@ install packer
 install adobe-air-sdk
 install nodebrew
 
+tap homebrew/versions
+
 # link
 link libxml2 --force
 link libxslt --force
