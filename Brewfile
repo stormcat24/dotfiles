@@ -6,7 +6,6 @@ install ansible
 install autoconf
 install automake
 install bash
-install brew-cask
 install cloog-ppl015
 install cmake
 install ctags
@@ -117,7 +116,6 @@ cask install android-studio
 cask install intel-haxm
 cask install insomniax
 cask install flashlight
-cask install kindle
 
 # finalize
 cleanup
