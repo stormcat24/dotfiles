@@ -115,7 +115,7 @@ cask install adobe-air
 cask install android-studio
 cask install intel-haxm
 cask install insomniax
-cask install flashlight
+cask install sketch-tool
 
 # finalize
 cleanup
