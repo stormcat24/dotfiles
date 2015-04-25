@@ -9,7 +9,6 @@ fi
 eval "$(rbenv init -)"
 
 # Go
-export GOROOT=`go env GOROOT`
 export GOPATH=$HOME/_go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
