@@ -14,6 +14,7 @@ tap dart-lang/dart
 install dart
 install docker
 install direnv
+install ffmpeg
 install fontforge
 install freetype
 install gcc47
