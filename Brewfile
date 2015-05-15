@@ -13,6 +13,7 @@ install curl
 tap dart-lang/dart
 install dart
 install docker
+install docker-machine
 install direnv
 install ffmpeg
 install fontforge

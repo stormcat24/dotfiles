@@ -28,5 +28,5 @@ windows:
   - DOCKER:
       layout: tiled
       panes:
-        - boot2docker:
-          - bd up
+        - dockermachine:
+          - docker-machine start
