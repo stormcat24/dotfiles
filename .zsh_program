@@ -16,5 +16,5 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 AEROMOCK_HOME=~/.aeromock/applications/current
 export PATH=$PATH:$AEROMOCK_HOME
 
-export M2_REPO_USER=aeromock
-export M2_REPO_PASSWORD=bfspnpdl
+# Docker
+eval "$(docker-machine env)"

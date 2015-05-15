@@ -14,6 +14,7 @@ tap dart-lang/dart
 install dart
 install docker
 install docker-machine
+install docker-compose
 install direnv
 install ffmpeg
 install fontforge

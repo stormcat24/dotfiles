@@ -92,9 +92,6 @@ fi
 
 export TERM='xterm-256color'
 
-# boot2docker
-export FORWARD_DOCKER_PORTS=1
-
 # editor
 export EDITOR='vim'
 # direnv(requires EDITOR)
