@@ -6,7 +6,6 @@ endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
-call neobundle#end()
 
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f
@@ -111,7 +110,6 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 """ その他
     NeoBundle 'tpope/vim-markdown'
     NeoBundle 'ekalinin/Dockerfile.vim'
-    NeoBundle 'ryanoasis/vim-webdevicons'
     NeoBundle 'markcornick/vim-terraform'
 
 "" Unite
@@ -148,6 +146,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'basyura/bitly.vim'
 
 " ***** Original Settings End *****
+call neobundle#end()
 
 " Installation check.
 NeoBundleCheck
