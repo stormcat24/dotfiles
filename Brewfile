@@ -119,6 +119,7 @@ cask install android-studio
 cask install intel-haxm
 cask install insomniax
 cask install sketch-tool
+cask install licecap
 
 # finalize
 cleanup
