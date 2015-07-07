@@ -34,6 +34,7 @@ install hub
 install icu4c
 install imagemagick --with-libtiff
 install jpeg
+install jq
 install kibiconv
 install libxml2
 install libevent
