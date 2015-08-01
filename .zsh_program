@@ -16,5 +16,3 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 AEROMOCK_HOME=~/.aeromock/applications/current
 export PATH=$PATH:$AEROMOCK_HOME
 
-# Docker
-eval "$(docker-machine env)"
