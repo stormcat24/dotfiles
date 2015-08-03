@@ -64,7 +64,7 @@ autoload colors
 colors
 
 P_CDIR="%B%F{cyan}%~%f%b"
-P_INFO="%F{yellow}%n@$LOCAL_NAME%f:"
+P_INFO="%F{yellow}stormcat24@$LOCAL_NAME%f:"
 P_VCS="%F{green}%1v%f"
 PROMPT="[$P_INFO$P_CDIR]$P_VCS$ "
 
