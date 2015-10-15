@@ -28,7 +28,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 
 " ***** Original Setting Start *****
 "" OS系
-  NeoBundle 'sudo.vim'
+  ""NeoBundle 'sudo.vim'
 "" 編集系
 """" コメントアウト
   NeoBundle 'scrooloose/nerdcommenter.git'
@@ -38,9 +38,9 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
   NeoBundle 'tpope/vim-surround'
   NeoBundle 'xmledit'
 """" スペルチェック
-  NeoBundle 'mattn/excitetranslate-vim'
+  ""NeoBundle 'mattn/excitetranslate-vim'
 """" javaのプロパティファイルをnative2asciiで開くやつ
-  NeoBundle 'KamunagiChiduru/vim-edit-properties'
+  ""NeoBundle 'KamunagiChiduru/vim-edit-properties'
 """" 一括置換
   NeoBundle 'osyo-manga/vim-over'
 """" yankround.vim
@@ -65,7 +65,7 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 "" 検索系
   NeoBundle 'grep.vim'
   NeoBundle 'eregex.vim'
-  NeoBundle 'tyru/open-browser.vim'
+  ""NeoBundle 'tyru/open-browser.vim'
   NeoBundle "kien/ctrlp.vim"
   NeoBundle 'majutsushi/tagbar'
   NeoBundle 'osyo-manga/vim-anzu'
@@ -95,8 +95,8 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 """" Go
     NeoBundle 'fatih/vim-go'
 """" CSS
-    NeoBundle 'css_color.vim'
-    NeoBundle 'csscomb/csscomb-for-vim'
+    ""NeoBundle 'css_color.vim'
+    ""NeoBundle 'csscomb/csscomb-for-vim'
 
 """ その他
     NeoBundle 'tpope/vim-markdown'
@@ -113,8 +113,8 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 
 "" ツール、ユーティリティ
     NeoBundle 'cecutil'
-    NeoBundle 'Shougo/vimfiler.vim'
-    NeoBundle 'Shougo/vimshell.git'
+    ""NeoBundle 'Shougo/vimfiler.vim'
+    ""NeoBundle 'Shougo/vimshell.git'
     NeoBundle 'Shougo/vimproc', {
           \ 'build' : {
           \     'windows' : 'make -f make_mingw32.mak',
@@ -127,13 +127,13 @@ NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
     NeoBundle 'bling/vim-airline'
     NeoBundle 'airblade/vim-gitgutter'
     NeoBundle 'gregsexton/gitv'
-    NeoBundle 'supermomonga/projectlocal.vim'
+    ""NeoBundle 'supermomonga/projectlocal.vim'
 
 "" TweetVim関連
     NeoBundle 'basyura/TweetVim'
     NeoBundle 'mattn/webapi-vim'
     NeoBundle 'basyura/twibill.vim'
-    NeoBundle 'basyura/bitly.vim'
+    ""NeoBundle 'basyura/bitly.vim'
 
 " ***** Original Settings End *****
 call neobundle#end()
