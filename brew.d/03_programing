@@ -1,0 +1,12 @@
+tap dart-lang/dart
+install dart
+install go
+install maven
+install rbenv
+install ruby-build
+install rbenv-gemset
+install rbenv-gem-rehash
+install scala
+install sbt
+install v8
+install nodebrew
