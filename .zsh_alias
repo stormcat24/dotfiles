@@ -6,8 +6,13 @@ alias ll='ls -lh'
 alias la='ls -lha'
 alias ls='ls -Gh'
 
+## cd
+alias ...='cd ../../'
+alias ....='cd ../../../'
+
 ## vim
-alias v='vim'
+alias vim='nvim'
+alias v='nvim'
 
 # git
 ## WIP commit
@@ -15,9 +20,6 @@ alias gip='git commit -m "[WIP]"'
 
 # ghq
 alias repo='ghq look'
-
-# docker
-alias bd='boot2docker'
 
 # ctags
 alias ctags="`brew --prefix`/opt/ctags/bin/ctags"

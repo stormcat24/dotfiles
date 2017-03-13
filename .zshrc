@@ -64,9 +64,11 @@ autoload colors
 colors
 
 P_CDIR="%B%F{cyan}%~%f%b"
-P_INFO="%F{yellow}stormcat24@$LOCAL_NAME%f:"
+P_INFO="%F{magenta}stormcat24%f@%F{yellow}$HOST%f"
 P_VCS="%F{green}%1v%f"
-PROMPT="[$P_INFO$P_CDIR]$P_VCS$ "
+PROMPT="
+($P_CDIR) $P_VCS
+$P_INFO $ "
 
 # 補完関数の表示を強化する
 zstyle ':completion:*' verbose yes
@@ -92,7 +94,12 @@ fi
 
 export TERM='xterm-256color'
 
+# XDG
+export XDG_CONFIG_HOME="$HOME/.config" 
+
 # editor
-export EDITOR='vim'
+export EDITOR='nvim'
 # direnv(requires EDITOR)
 eval "$(direnv hook zsh)"
+
+
