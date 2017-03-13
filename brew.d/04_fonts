@@ -1,0 +1,10 @@
+tap caskroom/fonts
+cask install font-myrica
+cask install font-myricam
+cask install font-m-plus
+cask install font-clear-sans 
+cask install font-roboto 
+cask install font-source-code-pro
+cask install font-dejavu-sans
+cask install font-dejavu-sans-mono-for-powerline
+cask install font-input

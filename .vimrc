@@ -5,24 +5,24 @@ filetype plugin indent off
 source ~/.vimrc.bundle
 
 "基本設定
-source ~/.vimrc.basic
+"source ~/.vimrc.basic
 
 "エディタ設定
-source ~/.vimrc.editor
+"source ~/.vimrc.editor
 
 "色設定
-source ~/.vimrc.colors
+"source ~/.vimrc.colors
 
 "エンコード設定
-source ~/.vimrc.encoding
+"source ~/.vimrc.encoding
 
 "キーマップ設定
-source ~/.vimrc.key
+"source ~/.vimrc.key
 
 "プラグイン設定
-source ~/.vimrc.plugins
+"source ~/.vimrc.plugins
 
 "補完設定
-source ~/.vimrc.neocomplete
+"source ~/.vimrc.neocomplete
 
 filetype plugin indent on
