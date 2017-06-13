@@ -15,7 +15,4 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # Rust
 source ~/.cargo/env
 
-# Aeromock
-AEROMOCK_HOME=~/.aeromock/applications/current
-export PATH=$PATH:$AEROMOCK_HOME
-
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
