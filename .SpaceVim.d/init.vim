@@ -13,6 +13,8 @@ let g:spacevim_custom_plugins = [
         \ ['fatih/vim-go'], 
         \ ['plasticboy/vim-markdown', {'on_ft' : 'markdown'}],
         \ ['wsdjeg/GitHub.vim'],
+        \ ['LeafCage/yankround.vim'],
+        \ ['kien/ctrlp.vim'],
     \   ]
 
 """ TweetVim
