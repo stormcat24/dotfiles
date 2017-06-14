@@ -74,3 +74,13 @@ nnoremap <expr> [6~ <SID>goback_insert("\<PageDown>")
 "TweetVimSay
 nnoremap <silent> ss :TweetVimSay<CR>
 
+"yankaround
+nmap p <Plug>(yankround-p)
+nmap P <Plug>(yankround-P)
+nmap <C-p> <Plug>(yankround-prev)
+nmap <C-n> <Plug>(yankround-next)
+"" —š—ğæ“¾”
+let g:yankround_max_history = 50
+""—š—ğˆê——(kien/ctrlp.vim)
+nnoremap <silent>g<C-p> :<C-u>CtrlPYankRound<CR>
+" }}}
