@@ -33,4 +33,3 @@ install tmux
 install vim --override-system-vi --with-lua --with-ruby --with-python --with-python3
 tap neovim/neovim
 install neovim
-install reattach-to-user-namespace
