@@ -20,6 +20,10 @@ set showcmd
 "画面最下行にルーラーを表示する
 set ruler
 
+"nvim日本語化け問題
+set ttimeout
+set ttimeoutlen=100
+
 "ステータスラインの設定
 ""0:一番下のウィンドウはステータスラインを表示しない
 ""1:ウィンドウが1つの時はステータスラインを表示しない。2つ以上ある場合は、ステータスラインを表示する
@@ -47,3 +51,6 @@ set cmdheight=2
 
 "インクリメンタルサーチを行う
 set incsearch
+
+" nvimのterminal emulatorでzshを使う
+set sh=zsh

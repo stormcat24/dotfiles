@@ -79,8 +79,30 @@ nmap p <Plug>(yankround-p)
 nmap P <Plug>(yankround-P)
 nmap <C-p> <Plug>(yankround-prev)
 nmap <C-n> <Plug>(yankround-next)
-"" —š—ğæ“¾”
 let g:yankround_max_history = 50
-""—š—ğˆê——(kien/ctrlp.vim)
 nnoremap <silent>g<C-p> :<C-u>CtrlPYankRound<CR>
 " }}}
+
+"neoterm
+let g:neoterm_position = 'horizontal'
+let g:neoterm_automap_keys = ',tt'
+
+nnoremap <silent> <f10> :TREPLSendFile<cr>
+nnoremap <silent> <f9> :TREPLSendLine<cr>
+vnoremap <silent> <f9> :TREPLSendSelection<cr>
+
+" Useful maps
+" hide/close terminal
+nnoremap <silent> ,th :call neoterm#close()<cr>
+" clear terminal
+nnoremap <silent> ,tl :call neoterm#clear()<cr>
+" kills the current job (send a <c-c>)
+nnoremap <silent> ,tc :call neoterm#kill()<cr>
+
+" Rails commands
+command! Troutes :T rake routes
+command! -nargs=+ Troute :T rake routes | grep <args>
+command! Tmigrate :T rake db:migrate
+
+" Git commands
+command! -nargs=+ Tg :T git <args>

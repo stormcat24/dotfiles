@@ -15,6 +15,7 @@ let g:spacevim_custom_plugins = [
         \ ['wsdjeg/GitHub.vim'],
         \ ['LeafCage/yankround.vim'],
         \ ['kien/ctrlp.vim'],
+        \ ['kassio/neoterm'],
     \   ]
 
 """ TweetVim
