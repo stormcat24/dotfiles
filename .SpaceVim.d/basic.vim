@@ -22,7 +22,7 @@ set ruler
 
 "nvim日本語化け問題
 set ttimeout
-set ttimeoutlen=100
+set ttimeoutlen=50
 
 "ステータスラインの設定
 ""0:一番下のウィンドウはステータスラインを表示しない
