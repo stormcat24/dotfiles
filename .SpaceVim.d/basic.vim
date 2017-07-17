@@ -54,3 +54,6 @@ set incsearch
 
 " nvimのterminal emulatorでzshを使う
 set sh=zsh
+
+" no swapfile
+set noswapfile
