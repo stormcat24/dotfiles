@@ -1,6 +1,9 @@
 " use clipboard
 "set clipboard+=unnamedplus
 
+" python3
+let g:python3_host_prog = '/usr/local/bin/python3'
+
 " color scheme
 let g:spacevim_colorscheme = 'jellybeans'
 
