@@ -1,1 +1,2 @@
 pip install Pygments
+pip3 install neovim
