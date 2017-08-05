@@ -7,3 +7,4 @@ install rbenv-gem-rehash
 install scala
 install sbt
 install nodebrew
+install heroku
