@@ -13,6 +13,7 @@ install gdbm
 install git
 install gnu-sed
 install ghi
+install hg
 install icu4c
 install libiconv
 install libxml2
