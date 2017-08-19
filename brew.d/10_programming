@@ -9,3 +9,4 @@ install sbt
 install nodebrew
 install heroku
 install docker-machine-driver-xhyve 
+install oni
