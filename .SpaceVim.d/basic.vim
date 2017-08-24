@@ -58,3 +58,6 @@ set sh=zsh
 
 " no swapfile
 set noswapfile
+
+" backspace
+set backspace=indent,eol,start
