@@ -10,7 +10,8 @@ install nodebrew
 install heroku
 install docker-machine-driver-xhyve 
 install oni
-install intellij-idea
-install webstorm
-install clion
-install appcode 
+cask install intellij-idea
+cask install webstorm
+cask install clion
+cask install appcode 
+cask install rider
