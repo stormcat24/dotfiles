@@ -9,7 +9,6 @@ install sbt
 install nodebrew
 install heroku
 install docker-machine-driver-xhyve 
-install oni
 cask install intellij-idea
 cask install webstorm
 cask install clion
