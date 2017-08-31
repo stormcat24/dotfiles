@@ -5,6 +5,7 @@ install zsh
 install cmake
 install ctags
 install curl
+install telnet
 install wget
 install fontforge
 install freetype
