@@ -84,7 +84,6 @@ nnoremap <silent>g<C-p> :<C-u>CtrlPYankRound<CR>
 " }}}
 
 "neoterm
-let g:neoterm_position = 'horizontal'
 let g:neoterm_automap_keys = ',tt'
 
 nnoremap <silent> <f10> :TREPLSendFile<cr>
