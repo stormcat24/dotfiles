@@ -8,9 +8,7 @@ install scala
 install sbt
 install nodebrew
 install heroku
-install docker-machine-driver-xhyve 
 cask install intellij-idea
 cask install webstorm
 cask install clion
 cask install appcode 
-cask install rider
