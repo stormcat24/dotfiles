@@ -8,3 +8,5 @@ install ffmpeg --with-fdk-aac --with-ffplay --with-freetype --with-libass --with
 install watch
 cask install ngrok
 install exa
+install graphviz
+install plantuml
