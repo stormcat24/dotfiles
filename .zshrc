@@ -103,3 +103,7 @@ export EDITOR='nvim'
 eval "$(direnv hook zsh)"
 
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/a13062/.sdkman"
+[[ -s "/Users/a13062/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/a13062/.sdkman/bin/sdkman-init.sh"

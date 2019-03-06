@@ -1,12 +1,8 @@
-cask install java
 install go
-install maven
 install rbenv
 install ruby-build
 install rbenv-gemset
 install rbenv-gem-rehash
-install scala
-install sbt
 install nodebrew
 install heroku
 cask install intellij-idea
