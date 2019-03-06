@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash -e
 
 GHQ_HOME=$HOME/repos
 DOT_FILES_DIR=$GHQ_HOME/github.com/stormcat24/dotfiles
