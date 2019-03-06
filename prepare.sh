@@ -8,6 +8,7 @@ fi
 # install sdkman
 if [ -z `which sdk` ]; then
   curl -s https://get.sdkman.io | bash
+  source ~/.sdkman/bin/sdkman-init.sh
 fi
 
 curl -sSO https://raw.githubusercontent.com/stormcat24/dotfiles/master/Brewfile
