@@ -1,3 +1,4 @@
+cask install java
 install go
 install maven
 install rbenv
@@ -11,4 +12,3 @@ install heroku
 cask install intellij-idea
 cask install webstorm
 cask install clion
-cask install appcode 
