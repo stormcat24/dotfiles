@@ -24,6 +24,15 @@ do
   fi
 done
 
+# link .config/dir
+for CENTRY in `ls $DOT_FILES_DIR/.config`
+do
+  if [ -L ~/.config/$CENTRY ]; then
+    rm ~/.config/$CENTRY 
+  fi
+  ln -s `pwd`/.config/$CENTRY ~/.config/
+done
+
 # reload .zshrc
 source ~/.zshrc
 echo "reloaded ~/.zshrc"

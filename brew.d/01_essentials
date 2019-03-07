@@ -37,3 +37,4 @@ install vim --override-system-vi --with-lua --with-ruby --with-python --with-pyt
 tap neovim/neovim
 install neovim
 install stormssh
+cask install alacritty
