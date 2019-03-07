@@ -1,10 +1,11 @@
 # define aliases
 
 #Unix
-## ls
-alias ll='ls -lh'
-alias la='ls -lha'
-alias ls='ls -Gh'
+# lsd
+# https://github.com/Peltoche/lsd
+alias ls='lsd'
+alias ll='lsd -l'
+alias la='lsd -la'
 
 ## cd
 alias ...='cd ../../'
@@ -32,3 +33,4 @@ alias hosts='vim sudo:/etc/hosts'
 
 # hugo
 alias hugoblog='cd $HOME/repos/github.com/stormcat24/blog.stormcat.io/blog && hugo serve -t casper'
+
