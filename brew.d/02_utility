@@ -10,4 +10,4 @@ cask install ngrok
 install exa
 install graphviz
 install plantuml
-cask install oath-toolkit 
+install oath-toolkit 
