@@ -15,5 +15,3 @@ export GO111MODULE=on
 
 # Rust
 source ~/.cargo/env
-
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
