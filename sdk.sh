@@ -6,3 +6,4 @@ sdk install gradle 5.2.1
 sdk install visualvm 1.4.2
 sdk install scala 2.12.8
 sdk install sbt 1.2.8
+sdk install micronaut 1.0.4 
