@@ -1,1 +1,4 @@
 install kustomize 
+
+tap derailed/k9s
+install k9s
