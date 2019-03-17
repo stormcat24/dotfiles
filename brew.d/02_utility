@@ -11,3 +11,4 @@ install exa
 install graphviz
 install plantuml
 install oath-toolkit 
+cask install keybase
