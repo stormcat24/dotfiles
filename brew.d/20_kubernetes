@@ -3,3 +3,6 @@ install skaffold
 
 tap derailed/k9s
 install k9s
+
+tap weaveworks/tap
+install weaveworks/tap/eksctl
