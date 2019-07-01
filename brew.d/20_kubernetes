@@ -6,3 +6,6 @@ install k9s
 
 tap weaveworks/tap
 install weaveworks/tap/eksctl
+
+cask install osxfuse
+install datawire/blackbird/telepresence
