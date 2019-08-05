@@ -13,3 +13,4 @@ install plantuml
 install oath-toolkit 
 cask install keybase
 install golang-migrate 
+install eko/homebrew-tap/monday
