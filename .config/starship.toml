@@ -1,0 +1,51 @@
+add_newline = false
+
+[character]
+symbol = "（☝ ՞ਊ ՞）☝"
+error_symbol = "✗"
+use_symbol_for_status = true
+
+[package]
+symbol = "🎁 "
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = "💀"
+
+[git_branch]
+symbol = "🌱 "
+truncation_length = "4"
+truncation_symbol = ""
+
+[git_state]
+progress_divider = " of "
+cherry_pick = "🍒 PICKING"
+
+[git_status]
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "😰"
+diverged = "😵"
+untracked = "🤷‍"
+stashed = "📦"
+modified = "📝"
+staged = "➕"
+renamed = "👅"
+deleted = "🗑"
+
+[golang]
+symbol = "🏎💨 "
+
+[hostname]
+ssh_only = false
+prefix = "⟪"
+suffix = "⟫"
+disabled = false
+
+[jobs]
+symbol = "+ "
+threshold = 4
+
+[nodejs]
+symbol = "🤖 "
