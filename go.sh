@@ -10,3 +10,4 @@ go get github.com/motemen/ghq
 go get github.com/tools/godep
 go get github.com/docker/libcontainer/nsinit
 go get github.com/rakyll/boom
+go get github.com/bazelbuild/bazelisk
