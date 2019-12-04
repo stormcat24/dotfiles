@@ -1,5 +1,6 @@
 install kustomize 
 install skaffold
+install kind
 
 tap derailed/k9s
 install k9s
