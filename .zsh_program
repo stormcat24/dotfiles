@@ -5,15 +5,16 @@ if [ -d "${PYENV_ROOT}" ]; then
     eval "$(pyenv init -)"
 fi
 
-# rbenv
-eval "$(rbenv init -)"
-
 # Go
-export PATH="$HOME/.goenv/bin:$PATH"
-export GOPATH=$HOME/_go
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export GO111MODULE=on
-eval "$(goenv init -)"
 
 # Rust
 source ~/.cargo/env
+
+# Pub
+PUB_CACHE="$HOME/.pub-cache"
+if [ -d "$PUB_CACHE" ]; then
+  export PATH=$PATH:$PUB_CACHE/bin
+fi
