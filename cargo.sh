@@ -2,3 +2,4 @@
 
 cargo install lsd
 cargo install starship
+cargo install zellij
