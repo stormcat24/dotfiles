@@ -1,9 +1,7 @@
 add_newline = false
 
 [character]
-symbol = "（☝ ՞ਊ ՞）☝"
-error_symbol = "✗"
-use_symbol_for_status = true
+format = "$symbol （☝ ՞ਊ ՞）☝ "
 
 [package]
 symbol = "🎁 "
@@ -19,8 +17,10 @@ truncation_length = "4"
 truncation_symbol = ""
 
 [git_state]
-progress_divider = " of "
 cherry_pick = "🍒 PICKING"
+
+[git_metrics]
+disabled = false
 
 [git_status]
 conflicted = "🏳"
@@ -39,9 +39,6 @@ symbol = "🏎💨 "
 
 [hostname]
 ssh_only = false
-prefix = "⟪"
-suffix = "⟫"
-disabled = false
 
 [jobs]
 symbol = "+ "
