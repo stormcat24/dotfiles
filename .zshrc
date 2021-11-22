@@ -11,6 +11,10 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
+if [ -e /opt/homebrew/bin/brew ]; then
+  export PATH=$PATH:/opt/homebrew/bin
+fi
+
 # brewでインスコしたやつのzsh補完リンク設定
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 
