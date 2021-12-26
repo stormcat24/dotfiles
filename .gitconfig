@@ -1,3 +1,7 @@
 [user]
   name = stormcat24 
   email = stormcat24@stormcat.io 
+
+[ghq]
+root = ~/go/src
+root = ~/repos
