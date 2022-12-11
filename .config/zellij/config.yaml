@@ -1,4 +1,0 @@
-keybinds:
-  normal:
-    # disable Lock keybind
-    - unbind: [ Ctrl: 'g',]
