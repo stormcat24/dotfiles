@@ -5,6 +5,4 @@ install rbenv-gemset
 install rbenv-gem-rehash
 install nodebrew
 install heroku
-cask install intellij-idea
-cask install webstorm
-cask install clion
+install asdf

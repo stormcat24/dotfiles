@@ -4,13 +4,11 @@ install ghq
 install peco
 install the_silver_searcher
 install mycli
-install ffmpeg --with-fdk-aac --with-ffplay --with-freetype --with-libass --with-libquvi --with-libvorbis --with-libvpx --with-opus --with-x265
 install watch
-cask install ngrok
+install ngrok/ngrok/ngrok
 install exa
 install graphviz
 install plantuml
 install oath-toolkit 
-cask install keybase
 install golang-migrate 
 install eko/homebrew-tap/monday
