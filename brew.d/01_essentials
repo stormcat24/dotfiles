@@ -35,3 +35,4 @@ install tmux
 install reattach-to-user-namespace
 install vim --override-system-vi --with-lua --with-ruby --with-python --with-python3
 install neovim
+install asdf
