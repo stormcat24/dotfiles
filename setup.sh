@@ -24,6 +24,11 @@ do
   fi
 done
 
+
+if [ ! -d "~/.config" ]; then
+  mkdir -p ~/.config
+fi
+
 # link .config/dir
 for CENTRY in `ls $DOT_FILES_DIR/.config`
 do

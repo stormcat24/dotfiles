@@ -1,4 +1,5 @@
 install direnv
+install gh 
 install jq
 install ghq
 install peco
