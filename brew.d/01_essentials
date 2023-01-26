@@ -12,6 +12,7 @@ install freetype
 install gcc47
 install gdbm
 install git
+install lazygit
 install gnu-sed
 install ghi
 install hg
