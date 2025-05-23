@@ -2,13 +2,8 @@ install direnv
 install gh 
 install jq
 install ghq
-install the_silver_searcher
 install mycli
 install watch
 install ngrok/ngrok/ngrok
-install exa
 install graphviz
 install plantuml
-install oath-toolkit 
-install golang-migrate 
-install eko/homebrew-tap/monday
