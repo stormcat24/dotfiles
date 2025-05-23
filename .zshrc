@@ -95,11 +95,6 @@ zstyle ':completion:*' group-name ''
 zstyle ':completion:*' list-separator '-->'
 zstyle ':completion:*:manuals' separate-sections true
 
-# peco
-if [ -e ~/.zsh_peco ]; then
-    source ~/.zsh_peco
-fi
-
 export TERM='xterm-256color'
 
 # XDG
@@ -116,3 +111,30 @@ eval "$(starship init zsh)"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/stormcat/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/stormcat/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/stormcat/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/stormcat/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# pnpm
+export PNPM_HOME="/Users/stormcat/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/stormcat/.config/.dart-cli-completion/zsh-config.zsh ]] && . /Users/stormcat/.config/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+
+# Added by Windsurf
+export PATH="/Users/stormcat/.codeium/windsurf/bin:$PATH"

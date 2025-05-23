@@ -2,7 +2,6 @@ install direnv
 install gh 
 install jq
 install ghq
-install peco
 install the_silver_searcher
 install mycli
 install watch
