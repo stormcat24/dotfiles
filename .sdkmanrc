@@ -1,0 +1,4 @@
+# SDKMAN configuration
+java=21.0.7-zulu
+gradle=8.14
+visualvm=2.1.10
