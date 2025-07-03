@@ -23,9 +23,6 @@ alias gip='git commit -m "[WIP]"'
 # ghq
 alias repo='ghq look'
 
-# ctags
-alias ctags="`brew --prefix`/opt/ctags/bin/ctags"
-
 # gnu-sed
 alias sed='gsed'
 
