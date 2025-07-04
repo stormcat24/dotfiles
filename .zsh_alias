@@ -28,7 +28,3 @@ alias sed='gsed'
 
 # vim sudo:/etc/hosts
 alias hosts='vim sudo:/etc/hosts'
-
-# hugo
-alias hugoblog='cd $HOME/repos/github.com/stormcat24/blog.stormcat.io/blog && hugo serve -t casper'
-
