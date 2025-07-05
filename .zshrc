@@ -105,6 +105,11 @@ export EDITOR='nvim'
 # direnv(requires EDITOR)
 eval "$(direnv hook zsh)"
 
+# Rust
+if [ -f "$HOME/.cargo/env" ]; then
+  source ~/.cargo/env
+fi
+
 # starship
 eval "$(starship init zsh)"
 
@@ -112,6 +117,7 @@ eval "$(starship init zsh)"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+# Node, nvm
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -136,5 +142,12 @@ esac
 ## [/Completion]
 
 
-# Added by Windsurf
-export PATH="/Users/stormcat/.codeium/windsurf/bin:$PATH"
+# Pub
+PUB_CACHE="$HOME/.pub-cache"
+if [ -d "$PUB_CACHE" ]; then
+  export PATH=$PATH:$PUB_CACHE/bin
+fi
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/stormcat/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
