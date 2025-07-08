@@ -53,6 +53,9 @@ if [ -e ~/.zsh_program ]; then
     source ~/.zsh_program
 fi
 
+# Go
+export PATH=$PATH:$(go env GOPATH)/bin
+
 # その端末固有の設定をロードする
 if [ -e ~/.zsh_local ]; then
     source ~/.zsh_local
