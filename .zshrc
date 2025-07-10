@@ -10,7 +10,6 @@ source ~/.zsh_alias
 
 # asdf
 . "$HOME/.asdf/asdf.sh"
-. "$HOME/.asdf/completions/asdf.bash"
 
 # zsh基本設定
 export LANG=ja_JP.UTF-8
@@ -54,32 +53,13 @@ if [ -e ~/.zsh_program ]; then
 fi
 
 # Go
-export PATH=$PATH:$(go env GOPATH)/bin
+export GOPATH="$HOME/go"
+export PATH=$PATH:$GOPATH/bin
 
 # その端末固有の設定をロードする
 if [ -e ~/.zsh_local ]; then
     source ~/.zsh_local
 fi
-
-# プロンプトの設定
-autoload -Uz vcs_info
-zstyle ':vcs_info:*' formats '(%s)-[%b]'
-zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a]'
-precmd () {
-  psvar=()
-  LANG=en_US.UTF-8 vcs_info
-  [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
-}
-
-autoload colors
-colors
-
-P_CDIR="%B%F{cyan}%~%f%b"
-P_INFO="%F{magenta}stormcat24%f@%F{yellow}$HOST%f"
-P_VCS="%F{green}%1v%f"
-PROMPT="
-($P_CDIR) $P_VCS
-$P_INFO $ "
 
 # 補完関数の表示を強化する
 zstyle ':completion:*' verbose yes
@@ -124,12 +104,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/stormcat/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/stormcat/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/stormcat/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/stormcat/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 # pnpm
 export PNPM_HOME="/Users/stormcat/Library/pnpm"
