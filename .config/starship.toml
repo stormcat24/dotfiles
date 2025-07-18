@@ -1,16 +1,46 @@
 add_newline = false
 
+# Character prompt - エラー時の区別を明確に
 [character]
-format = "$symbol （☝ ՞ਊ ՞）☝ "
+success_symbol = "[➜](bold green) （☝ ՞ਊ ՞）☝ "
+error_symbol = "[✗](bold red) （☝ ՞ਊ ՞）☝ "
 
+# Command duration - 500ms以上かかったコマンドのみ表示
+[cmd_duration]
+min_time = 500
+format = "⏱ [$duration]($style) "
+
+# Directory - パフォーマンス向上のため短縮
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+format = "[$path]($style)[$read_only]($read_only_style) "
+
+# Time - 現在時刻を表示
+[time]
+disabled = false
+format = '🕙[\[ $time \]]($style) '
+time_format = "%H:%M"
+style = "bold dimmed"
+
+# Memory usage - 75%以上で警告
+[memory_usage]
+disabled = false
+threshold = 75
+format = "via $symbol [${ram_pct}]($style) "
+symbol = "🧠"
+
+# Package version
 [package]
 symbol = "🎁 "
 
+# Battery
 [battery]
 full_symbol = "🔋"
 charging_symbol = "⚡️"
 discharging_symbol = "💀"
 
+# Git
 [git_branch]
 symbol = "🌱 "
 truncation_length = 4
@@ -21,28 +51,56 @@ cherry_pick = "🍒 PICKING"
 
 [git_metrics]
 disabled = false
+added_style = "bold green"
+deleted_style = "bold red"
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
 
 [git_status]
-conflicted = "🏳"
-ahead = "🏎💨"
-behind = "😰"
-diverged = "😵"
-untracked = "🤷‍"
-stashed = "📦"
-modified = "📝"
-staged = "➕"
-renamed = "👅"
-deleted = "🗑"
+format = '([$all_status$ahead_behind]($style) )'
+conflicted = "="
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?"
+stashed = "$"
+modified = "!"
+staged = "+"
+renamed = "»"
+deleted = "✘"
 
+# Languages
 [golang]
 symbol = "🏎💨 "
+detect_extensions = ["go"]
+detect_files = ["go.mod", "go.sum", "glide.yaml", "Gopkg.yml", "Gopkg.lock", ".go-version"]
 
+[nodejs]
+symbol = "🤖 "
+detect_extensions = ["js", "mjs", "cjs", "ts", "mts", "cts"]
+detect_files = ["package.json", ".node-version", ".nvmrc"]
+
+[python]
+symbol = "🐍 "
+detect_extensions = ["py"]
+detect_files = ["requirements.txt", "pyproject.toml", "Pipfile", "tox.ini", "setup.py", ".python-version"]
+
+# System
 [hostname]
 ssh_only = false
+format = "[$hostname]($style) "
 
 [jobs]
 symbol = "+ "
 threshold = 4
+format = "[$symbol$number]($style) "
 
-[nodejs]
-symbol = "🤖 "
+# Containers
+[docker_context]
+symbol = "🐋 "
+format = "via [$symbol$context]($style) "
+only_with_files = false
+
+[kubernetes]
+symbol = "⛵ "
+format = 'on [$symbol$context( \($namespace\))]($style) '
+disabled = false
