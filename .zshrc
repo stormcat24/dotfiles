@@ -9,7 +9,7 @@ fi
 source ~/.zsh_alias
 
 # asdf
-. "$HOME/.asdf/asdf.sh"
+. $(brew --prefix asdf)/libexec/asdf.sh
 
 # zsh基本設定
 export LANG=ja_JP.UTF-8
