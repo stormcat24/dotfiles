@@ -37,3 +37,4 @@ install vim --override-system-vi --with-lua --with-ruby --with-python --with-pyt
 install neovim
 install asdf
 install coreutils
+install uv
