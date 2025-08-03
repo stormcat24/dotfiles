@@ -1,3 +1,0 @@
-go get github.com/gohugoio/hugo
-go get github.com/golang/mock/mockgen
-go get github.com/ysugimoto/ls3/...
