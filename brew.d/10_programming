@@ -3,6 +3,4 @@ install rbenv
 install ruby-build
 install rbenv-gemset
 install rbenv-gem-rehash
-install nodebrew
 install heroku
-install asdf
