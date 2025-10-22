@@ -1,6 +1,0 @@
-install --cask alacritty
-install --cask keybase
-install --cask intellij-idea
-install --cask android-studio 
-install --cask visual-studio-code
-install --cask rectangle 
