@@ -18,6 +18,15 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
+# 前方一致履歴検索（入力中の文字に一致する履歴のみを↑/↓で表示）
+autoload -Uz history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^[[A" history-beginning-search-backward-end  # ↑キー
+bindkey "^[[B" history-beginning-search-forward-end   # ↓キー
+bindkey "^P" history-beginning-search-backward-end    # Ctrl+P
+bindkey "^N" history-beginning-search-forward-end     # Ctrl+N
+
 # brewでインスコしたやつのzsh補完リンク設定
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 
@@ -78,7 +87,36 @@ zstyle ':completion:*' group-name ''
 zstyle ':completion:*' list-separator '-->'
 zstyle ':completion:*:manuals' separate-sections true
 
-export TERM='xterm-256color'
+# Terminal settings
+if [[ -n "$GHOSTTY_RESOURCES_DIR" ]]; then
+  # ghosttyで動作時
+  export TERM='xterm-ghostty'
+
+  # vim modeでのカーソル形状変更
+  function zle-keymap-select {
+    case $KEYMAP in
+      vicmd) print -n '\e[1 q';;      # コマンドモード: ブロックカーソル
+      viins|main) print -n '\e[5 q';; # 挿入モード: 点滅バーカーソル
+    esac
+  }
+  zle -N zle-keymap-select
+
+  # 行編集開始時に挿入モードカーソルにリセット
+  function zle-line-init {
+    print -n '\e[5 q'
+  }
+  zle -N zle-line-init
+
+  # OSC 7: ディレクトリ変更をターミナルに通知（新規タブで同じディレクトリを開く機能）
+  function _ghostty_osc7 {
+    printf '\e]7;file://%s%s\e\\' "${HOST}" "${PWD}"
+  }
+  autoload -Uz add-zsh-hook
+  add-zsh-hook chpwd _ghostty_osc7
+  _ghostty_osc7  # 初回実行
+else
+  export TERM='xterm-256color'
+fi
 
 # XDG
 export XDG_CONFIG_HOME="$HOME/.config" 

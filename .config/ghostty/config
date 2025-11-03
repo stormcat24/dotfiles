@@ -64,3 +64,4 @@ keybind = cmd+zero=reset_font_size
 # Background color
 background = 001f44
 foreground = ffffff
+keybind = shift+enter=text:\x1b\r
