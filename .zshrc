@@ -131,6 +131,9 @@ if [ -f "$HOME/.cargo/env" ]; then
   source ~/.cargo/env
 fi
 
+# atuin
+eval "$(atuin init zsh)"
+
 # starship
 eval "$(starship init zsh)"
 
