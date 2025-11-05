@@ -1,6 +1,0 @@
-install go
-install rbenv
-install ruby-build
-install rbenv-gemset
-install rbenv-gem-rehash
-install heroku

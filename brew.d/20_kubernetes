@@ -1,7 +1,0 @@
-install kustomize 
-install skaffold
-install kind
-install derailed/k9s/k9s
-
-tap weaveworks/tap
-install weaveworks/tap/eksctl
