@@ -1,0 +1,27 @@
+# Yazi keymap configuration
+# https://yazi-rs.github.io/docs/configuration/keymap
+
+[[mgr.prepend_keymap]]
+on = ["g", "h"]
+run = "cd ~"
+desc = "Go to home directory"
+
+[[mgr.prepend_keymap]]
+on = ["g", "c"]
+run = "cd ~/.config"
+desc = "Go to config directory"
+
+[[mgr.prepend_keymap]]
+on = ["g", "d"]
+run = "cd ~/Downloads"
+desc = "Go to downloads"
+
+[[mgr.prepend_keymap]]
+on = ["g", "r"]
+run = "cd ~/repos"
+desc = "Go to repos"
+
+[[mgr.prepend_keymap]]
+on = ["<C-n>"]
+run = "shell 'nvim' --block"
+desc = "Open nvim in current directory"

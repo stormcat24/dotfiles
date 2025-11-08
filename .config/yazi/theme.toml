@@ -1,0 +1,106 @@
+# Yazi theme configuration
+# Using Tokyo Night inspired colors to match LazyVim
+# https://yazi-rs.github.io/docs/configuration/theme
+
+[mgr]
+cwd = { fg = "#7aa2f7" }
+hovered = { fg = "#1a1b26", bg = "#7aa2f7" }
+preview_hovered = { underline = true }
+find_keyword = { fg = "#e0af68", bold = true, italic = true, underline = true }
+find_position = { fg = "#bb9af7", bg = "reset", bold = true, italic = true }
+marker_copied = { fg = "#9ece6a", bg = "#9ece6a" }
+marker_cut = { fg = "#f7768e", bg = "#f7768e" }
+marker_marked = { fg = "#7aa2f7", bg = "#7aa2f7" }
+marker_selected = { fg = "#e0af68", bg = "#e0af68" }
+tab_active = { fg = "#1a1b26", bg = "#7aa2f7" }
+tab_inactive = { fg = "#a9b1d6", bg = "#24283b" }
+tab_width = 1
+count_copied = { fg = "#1a1b26", bg = "#9ece6a" }
+count_cut = { fg = "#1a1b26", bg = "#f7768e" }
+count_selected = { fg = "#1a1b26", bg = "#e0af68" }
+border_symbol = "│"
+border_style = { fg = "#3b4261" }
+
+[status]
+separator_open = ""
+separator_close = ""
+separator_style = { fg = "#24283b", bg = "#24283b" }
+mode_normal = { fg = "#1a1b26", bg = "#7aa2f7", bold = true }
+mode_select = { fg = "#1a1b26", bg = "#9ece6a", bold = true }
+mode_unset = { fg = "#1a1b26", bg = "#bb9af7", bold = true }
+progress_label = { fg = "#a9b1d6", bold = true }
+progress_normal = { fg = "#7aa2f7", bg = "#24283b" }
+progress_error = { fg = "#f7768e", bg = "#24283b" }
+permissions_t = { fg = "#7aa2f7" }
+permissions_r = { fg = "#e0af68" }
+permissions_w = { fg = "#f7768e" }
+permissions_x = { fg = "#9ece6a" }
+permissions_s = { fg = "#737aa2" }
+
+[select]
+border = { fg = "#7aa2f7" }
+active = { fg = "#bb9af7", bold = true }
+inactive = { fg = "#a9b1d6" }
+
+[input]
+border = { fg = "#7aa2f7" }
+title = {}
+value = {}
+selected = { reversed = true }
+
+[completion]
+border = { fg = "#7aa2f7" }
+active = { fg = "#bb9af7", bold = true }
+inactive = { fg = "#a9b1d6" }
+
+[tasks]
+border = { fg = "#7aa2f7" }
+title = {}
+hovered = { fg = "#bb9af7", underline = true }
+
+[which]
+cols = 3
+mask = { bg = "#24283b" }
+cand = { fg = "#7dcfff" }
+rest = { fg = "#737aa2" }
+desc = { fg = "#bb9af7" }
+separator = "  "
+separator_style = { fg = "#3b4261" }
+
+[help]
+on = { fg = "#7aa2f7" }
+run = { fg = "#bb9af7" }
+desc = { fg = "#a9b1d6" }
+hovered = { reversed = true, bold = true }
+footer = { fg = "#a9b1d6", bg = "#1a1b26" }
+
+[notify]
+title_info = { fg = "#9ece6a" }
+title_warn = { fg = "#e0af68" }
+title_error = { fg = "#f7768e" }
+
+[filetype]
+rules = [
+  { name = "*/", fg = "#7aa2f7", bold = true },
+  { mime = "image/*", fg = "#bb9af7" },
+  { mime = "video/*", fg = "#e0af68" },
+  { mime = "audio/*", fg = "#9ece6a" },
+  { mime = "application/zip", fg = "#f7768e" },
+  { mime = "application/gzip", fg = "#f7768e" },
+  { mime = "application/x-tar", fg = "#f7768e" },
+  { mime = "application/x-bzip", fg = "#f7768e" },
+  { mime = "application/x-bzip2", fg = "#f7768e" },
+  { mime = "application/x-7z-compressed", fg = "#f7768e" },
+  { mime = "application/x-rar", fg = "#f7768e" },
+  { name = "*.go", fg = "#7dcfff" },
+  { name = "*.rs", fg = "#f7768e" },
+  { name = "*.py", fg = "#e0af68" },
+  { name = "*.js", fg = "#e0af68" },
+  { name = "*.ts", fg = "#7aa2f7" },
+  { name = "*.lua", fg = "#7aa2f7" },
+  { name = "*.md", fg = "#a9b1d6" },
+  { name = "*.json", fg = "#9ece6a" },
+  { name = "*.yaml", fg = "#9ece6a" },
+  { name = "*.yml", fg = "#9ece6a" },
+  { name = "*.toml", fg = "#9ece6a" },
+]
