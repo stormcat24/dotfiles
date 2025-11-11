@@ -134,6 +134,9 @@ fi
 # atuin
 eval "$(atuin init zsh)"
 
+# zoxide
+eval "$(zoxide init zsh)"
+
 # starship
 eval "$(starship init zsh)"
 
