@@ -39,6 +39,14 @@ background-opacity = 0.88
 # Confirm before closing if processes are running
 confirm-close-surface = true
 
+# Scrollbar
+scrollbar = system
+
+# Command finish notifications
+notify-on-command-finish = unfocused
+notify-on-command-finish-action = no-bell,notify
+notify-on-command-finish-after = 30s
+
 # Quick terminal (macOS)
 keybind = global:cmd+grave_accent=toggle_quick_terminal
 
