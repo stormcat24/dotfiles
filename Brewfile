@@ -49,6 +49,7 @@ brew "sqlfluff"
 brew "stern"
 brew "telnet", link: false
 brew "terraform"
+brew "tmux"
 brew "tesseract"
 brew "tesseract-lang"
 brew "tre"

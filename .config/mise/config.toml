@@ -19,6 +19,7 @@ k9s = "latest"
 jq = "latest"
 buf = "latest"
 typos = "latest"
+"npm:dmux" = "latest"
 
 [settings]
 # asdf互換: .tool-versionsも読む
