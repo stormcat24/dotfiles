@@ -1,3 +1,10 @@
+# OPENSPEC:START
+# OpenSpec shell completions configuration
+fpath=("/Users/stormcat/.zsh/completions" $fpath)
+autoload -Uz compinit
+compinit
+# OPENSPEC:END
+
 # vim like
 bindkey -v
 
@@ -8,8 +15,8 @@ fi
 # aliases
 source ~/.zsh_alias
 
-# asdf
-. $(brew --prefix asdf)/libexec/asdf.sh
+# mise
+eval "$(mise activate zsh)"
 
 # zsh基本設定
 export LANG=ja_JP.UTF-8
@@ -140,14 +147,6 @@ eval "$(zoxide init zsh)"
 # starship
 eval "$(starship init zsh)"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# Node, nvm
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # pnpm
 export PNPM_HOME="/Users/stormcat/Library/pnpm"
@@ -172,3 +171,12 @@ fi
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/stormcat/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# bun completions
+[ -s "/Users/stormcat/.bun/_bun" ] && source "/Users/stormcat/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+alias claude-mem='bun "/Users/stormcat/.claude/plugins/cache/thedotmack/claude-mem/10.5.2/scripts/worker-service.cjs"'

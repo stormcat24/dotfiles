@@ -26,6 +26,7 @@ HOME_DOTFILES=(
 # .config items (directories and files inside .config/)
 CONFIG_ITEMS=(
   ghostty
+  mise
   nvim
   starship.toml
   yazi
