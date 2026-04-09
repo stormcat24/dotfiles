@@ -171,10 +171,6 @@ if [ -d "$PUB_CACHE" ]; then
   export PATH=$PATH:$PUB_CACHE/bin
 fi
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/stormcat/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
