@@ -132,7 +132,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR='nvim'
 
 # Claude Code
-export CLAUDE_CODE_EFFORT_LEVEL='max'
+export CLAUDE_CODE_EFFORT_LEVEL=high
+export CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING=1
 # direnv(requires EDITOR)
 eval "$(direnv hook zsh)"
 
